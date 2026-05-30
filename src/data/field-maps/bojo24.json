@@ -1,0 +1,22 @@
+{
+  "source": "보조금24 (bojo24.go.kr)",
+  "description": "정부24 보조금24 API 필드 매핑",
+  "fields": {
+    "svcId": "service_id",
+    "svcNm": "name",
+    "jurMnofNm": "department",
+    "tgterIndvdlNm": "target_individual",
+    "alwServCn": "benefit_content",
+    "aplyMtdCn": "application_method",
+    "inqplCtadrCn": "contact",
+    "svcUrl": "source_url",
+    "lastModYmd": "last_modified"
+  },
+  "category_mapping": {
+    "혼인": "marriage",
+    "신혼": "newlywed",
+    "주거": "housing",
+    "전세": "housing",
+    "월세": "housing"
+  }
+}

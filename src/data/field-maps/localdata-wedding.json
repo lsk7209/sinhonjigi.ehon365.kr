@@ -1,0 +1,19 @@
+{
+  "source": "공공데이터포털 - 결혼식장 인허가 정보",
+  "api_url": "https://www.data.go.kr/data/15051282/openapi.do",
+  "description": "전국 결혼식장 인허가 현황",
+  "fields": {
+    "bplcNm": "name",
+    "rdnWhlAddr": "address",
+    "bsnStateNm": "status",
+    "apvPermYmd": "permit_date",
+    "sitewhlAddr": "address_old",
+    "x": "lng",
+    "y": "lat"
+  },
+  "status_mapping": {
+    "영업": "active",
+    "폐업": "closed",
+    "휴업": "suspended"
+  }
+}

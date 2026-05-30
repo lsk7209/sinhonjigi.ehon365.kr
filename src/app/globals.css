@@ -1,26 +1,122 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
+@custom-variant dark (&:is(.dark *));
+
+/* ===== 맘스고고 디자인 시스템 → 신혼지기 적용 ===== */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Lavender (primary) */
+  --lav-50: #F5F3FF;
+  --lav-100: #EDE9FE;
+  --lav-200: #DDD6FE;
+  --lav-300: #C4B5FD;
+  --lav-400: #A78BFA;
+  --lav-500: #8B5CF6;
+  --lav-600: #7C3AED;
+  --lav-700: #6D28D9;
+
+  /* Pink (accent) */
+  --pink-50: #FFF1F2;
+  --pink-100: #FFE4E6;
+  --pink-200: #FECDD3;
+  --pink-300: #FDA4AF;
+  --pink-400: #FB7185;
+
+  /* Sage (trust / source) */
+  --sage-100: #ECFAE5;
+  --sage-300: #B8E0A8;
+  --sage-500: #6FB060;
+
+  /* Neutrals (warm beige tone) */
+  --bg-page: #FFFBF7;
+  --bg-card: #FFFFFF;
+  --bg-soft: #FFF9F4;
+  --border: #F3E8E0;
+  --text-strong: #2D2640;
+  --text-default: #4A4458;
+  --text-secondary: #6B6478;
+  --text-caption: #9B95A8;
+
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, #F5F3FF 0%, #FFF1F2 100%);
+  --gradient-emphasis: linear-gradient(135deg, #DDD6FE 0%, #FECDD3 100%);
+  --gradient-cpa: linear-gradient(135deg, #FFFBF7 0%, #F5F3FF 100%);
+
+  /* Shadows (lavender-toned, not grey) */
+  --shadow-sm: 0 2px 8px rgba(186, 130, 198, 0.06);
+  --shadow-md: 0 4px 16px rgba(186, 130, 198, 0.08);
+  --shadow-lg: 0 8px 32px rgba(186, 130, 198, 0.10);
+
+  /* Semantic aliases */
+  --accent: var(--lav-400);
+  --accent-strong: var(--lav-500);
+
+  /* Theme bridge (for shadcn compatibility) */
+  --background: var(--bg-page);
+  --foreground: var(--text-default);
+  --card: var(--bg-card);
+  --card-foreground: var(--text-strong);
+  --primary: var(--lav-400);
+  --primary-foreground: #ffffff;
+  --secondary: var(--lav-50);
+  --secondary-foreground: var(--lav-600);
+  --muted: var(--lav-50);
+  --muted-foreground: var(--text-secondary);
+  --border-color: var(--border);
+  --ring: var(--lav-400);
+  --radius: 0.75rem;
+
+  /* Typography */
+  --body-size: 16px;
+  --body-leading: 1.7;
+  --radius-card: 16px;
+  --section-gap: 32px;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border-color);
+  --color-ring: var(--ring);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --font-sans: var(--font-pretendard), "Pretendard Variable", Pretendard, -apple-system, system-ui, sans-serif;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* ===== BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, system-ui, sans-serif;
+  background: var(--bg-page);
+  color: var(--text-default);
+  line-height: var(--body-leading);
+  letter-spacing: -0.005em;
+  font-size: var(--body-size);
+  -webkit-font-smoothing: antialiased;
+}
+.num { font-family: "Inter", system-ui, sans-serif; letter-spacing: -0.01em; font-feature-settings: "tnum"; }
+h1, h2, h3, h4 { color: var(--text-strong); line-height: 1.35; letter-spacing: -0.01em; }
+p { text-wrap: pretty; }
+a { color: inherit; text-decoration: none; }
+svg { display: block; }
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--lav-400);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  * { border-color: var(--border); }
 }

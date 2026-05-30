@@ -1,0 +1,17 @@
+{
+  "source": "KOSIS 국가통계포털 - 신혼부부통계",
+  "api_url": "https://kosis.kr/openapi/statisticsData.do",
+  "stat_code": "101_DT_1B8000F",
+  "description": "신혼부부 소득·주거 현황",
+  "fields": {
+    "PRD_DE": "year",
+    "C1_NM": "region_name",
+    "DT": "value",
+    "ITM_NM": "item_name"
+  },
+  "item_mapping": {
+    "평균소득": "avg_income_won",
+    "자가보유율": "homeowner_ratio",
+    "맞벌이비율": "dual_income_ratio"
+  }
+}

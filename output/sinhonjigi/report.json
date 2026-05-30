@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "issues": [],
+  "title_count": 100,
+  "done": 100,
+  "schedule_start": "2026-05-31T09:00:00+09:00",
+  "schedule_end": "2026-06-21T00:00:00+09:00",
+  "topic_counts": {
+    "jiwon": 40,
+    "wedding": 35,
+    "sinhon": 25
+  }
+}

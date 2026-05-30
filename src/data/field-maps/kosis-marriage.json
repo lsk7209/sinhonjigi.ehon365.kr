@@ -1,0 +1,17 @@
+{
+  "source": "KOSIS 국가통계포털 - 혼인통계",
+  "api_url": "https://kosis.kr/openapi/statisticsData.do",
+  "stat_code": "101_1_2014001",
+  "description": "시도별 혼인건수 및 평균 초혼연령",
+  "fields": {
+    "PRD_DE": "year",
+    "C1_NM": "region_name",
+    "DT": "value",
+    "ITM_NM": "item_name"
+  },
+  "item_mapping": {
+    "혼인건수": "total_marriages",
+    "남자 평균초혼연령": "avg_age_male",
+    "여자 평균초혼연령": "avg_age_female"
+  }
+}

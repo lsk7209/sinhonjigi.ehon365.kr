@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sample-fair-seoul-2026",
+    "vertical": "fair",
+    "advertiser": "샘플광고주",
+    "brand": "서울 웨딩박람회 사전등록",
+    "region_id": "seoul-gangnam",
+    "region_inferred": true,
+    "payout_won": 40000,
+    "landing_url": "https://example.com/fair-register",
+    "sub_id_param": "subid",
+    "status": "active",
+    "start_date": "2026-01-01",
+    "end_date": null,
+    "priority": 9,
+    "notes": "예시 데이터 — 실제 CPA 네트워크 가입 후 교체 필요"
+  },
+  {
+    "id": "sample-sdm-national-2026",
+    "vertical": "sdm",
+    "advertiser": "샘플스드메",
+    "brand": "웨딩스튜디오 무료 상담",
+    "region_id": null,
+    "region_inferred": false,
+    "payout_won": 30000,
+    "landing_url": "https://example.com/sdm-consult",
+    "sub_id_param": "subid",
+    "status": "active",
+    "start_date": "2026-01-01",
+    "end_date": null,
+    "priority": 7,
+    "notes": "예시 데이터 — 전국 오퍼"
+  },
+  {
+    "id": "sample-honeymoon-national-2026",
+    "vertical": "honeymoon",
+    "advertiser": "샘플여행사",
+    "brand": "신혼여행 견적 무료 받기",
+    "region_id": null,
+    "region_inferred": false,
+    "payout_won": 50000,
+    "landing_url": "https://example.com/honeymoon-quote",
+    "sub_id_param": "subid",
+    "status": "active",
+    "start_date": "2026-01-01",
+    "end_date": null,
+    "priority": 6,
+    "notes": "예시 데이터 — 실제 CPA 네트워크 가입 후 교체 필요"
+  }
+]

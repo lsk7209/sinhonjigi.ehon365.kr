@@ -1,0 +1,105 @@
+{
+  "article_id": "a087",
+  "title": "신혼 전입과 서류 가족관계증명서 실수 줄이는 준비 순서",
+  "unique_angle": "이미 조건을 일부 아는 독자가 탈락 가능성을 먼저 걸러보게 한다",
+  "ymyl_category": "housing_finance",
+  "ymyl_review": "pass",
+  "volatile": true,
+  "fact_traceability_pass": true,
+  "unresolved_claims": [],
+  "source_conflicts": [],
+  "competitor_gap": "지역명 치환형 안내가 아니라 신청 전 판단 기준, 증빙 순서, 내부 링크를 묶어 독립적인 실행 흐름을 제공한다.",
+  "angle_supporting_detail": {
+    "claim": "신혼 전입과 서류 가족관계증명서 판단에는 공식 조건과 실제 신청 순서를 함께 봐야 한다.",
+    "source_id": "nhuf-buy"
+  },
+  "research_runs": [
+    {
+      "query": "신혼 전입과 서류 가족관계증명서 공식 조건",
+      "date": "2026-05-30",
+      "purpose": "최신 공식 기준과 신청 기관 확인"
+    },
+    {
+      "query": "신혼 전입과 서류 가족관계증명서 전입신고 서류",
+      "date": "2026-05-30",
+      "purpose": "증빙과 신청 단계 확인"
+    },
+    {
+      "query": "신혼 전입과 서류 문제해결 실수 예방 비교",
+      "date": "2026-05-30",
+      "purpose": "같은 클러스터 내 차별화 각도 점검"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nhuf-buy",
+      "title": "주택도시기금 신혼부부전용 구입자금 안내",
+      "url": "https://nhuf.molit.go.kr/FP/FP05/FP0503/FP05030608.jsp",
+      "date": "2026-05-30",
+      "accessed": "2026-05-30",
+      "source_type": "official",
+      "is_official": true,
+      "freshness": "current"
+    },
+    {
+      "id": "gov-family",
+      "title": "정부24 가족관계등록부 등의 증명서 발급 안내",
+      "url": "https://www.gov.kr/mw/AA020InfoCappView.do?CappBizCD=97400000004&HighCtgCD=A01008&tp_seq=",
+      "date": "2026-05-30",
+      "accessed": "2026-05-30",
+      "source_type": "official",
+      "is_official": true,
+      "freshness": "current"
+    },
+    {
+      "id": "bokjiro",
+      "title": "복지로 복지서비스 안내",
+      "url": "https://www.bokjiro.go.kr/ssis-tbu/cms/pc/common/download/2024%EB%85%84%20%EC%95%88%EB%82%B4%EC%B1%85%EC%9E%90%20%5B%ED%86%B5%ED%95%A9%EA%B6%8C%5D.pdf",
+      "date": "2026-05-30",
+      "accessed": "2026-05-30",
+      "source_type": "official",
+      "is_official": true,
+      "freshness": "current"
+    },
+    {
+      "id": "kosis-region",
+      "title": "KOSIS 지역별 지표비교",
+      "url": "https://kosis.kr/visual/economyBoard/economyRegion.do?lang=kr",
+      "date": "2026-05-30",
+      "accessed": "2026-05-30",
+      "source_type": "official",
+      "is_official": true,
+      "freshness": "current"
+    },
+    {
+      "id": "localdata-manual",
+      "title": "LOCALDATA 공공데이터포털 이용매뉴얼",
+      "url": "https://www.localdata.go.kr/images/egovframework/portal/manual_260106.pdf",
+      "date": "2026-05-30",
+      "accessed": "2026-05-30",
+      "source_type": "official",
+      "is_official": true,
+      "freshness": "current"
+    }
+  ],
+  "data_points": [
+    {
+      "claim": "주거·대출·청약·민원 정보는 공식 기관 안내에서 조건과 신청 경로를 확인해야 한다.",
+      "source_id": "nhuf-buy",
+      "claim_type": "procedure",
+      "source_date": "2026-05-30"
+    },
+    {
+      "claim": "정부 민원과 가족관계 서류는 정부24 또는 관련 공식 시스템에서 처리 경로를 확인한다.",
+      "source_id": "gov-family",
+      "claim_type": "institution",
+      "source_date": "2026-05-30"
+    },
+    {
+      "claim": "지역 통계와 인허가 데이터는 결혼·신혼 판단의 보조 지표이며 개별 계약 조건을 대신하지 않는다.",
+      "source_id": "localdata-manual",
+      "claim_type": "data_context",
+      "source_date": "2026-05-30"
+    }
+  ]
+}

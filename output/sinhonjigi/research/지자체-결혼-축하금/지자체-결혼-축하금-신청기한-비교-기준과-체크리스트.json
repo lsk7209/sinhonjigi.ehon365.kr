@@ -1,0 +1,105 @@
+{
+  "article_id": "a013",
+  "title": "지자체 결혼 축하금 신청기한 비교 기준과 체크리스트",
+  "unique_angle": "비슷한 선택지를 금액보다 계약 책임 기준으로 비교한다",
+  "ymyl_category": "government_support",
+  "ymyl_review": "pass",
+  "volatile": true,
+  "fact_traceability_pass": true,
+  "unresolved_claims": [],
+  "source_conflicts": [],
+  "competitor_gap": "지역명 치환형 안내가 아니라 신청 전 판단 기준, 증빙 순서, 내부 링크를 묶어 독립적인 실행 흐름을 제공한다.",
+  "angle_supporting_detail": {
+    "claim": "지자체 결혼 축하금 신청기한 판단에는 공식 조건과 실제 신청 순서를 함께 봐야 한다.",
+    "source_id": "lh-jeonse-rent"
+  },
+  "research_runs": [
+    {
+      "query": "지자체 결혼 축하금 신청기한 공식 조건",
+      "date": "2026-05-30",
+      "purpose": "최신 공식 기준과 신청 기관 확인"
+    },
+    {
+      "query": "지자체 결혼 축하금 신청기한 혼인신고 서류",
+      "date": "2026-05-30",
+      "purpose": "증빙과 신청 단계 확인"
+    },
+    {
+      "query": "지자체 결혼 축하금 비교형 판단 기준 비교",
+      "date": "2026-05-30",
+      "purpose": "같은 클러스터 내 차별화 각도 점검"
+    }
+  ],
+  "sources": [
+    {
+      "id": "lh-jeonse-rent",
+      "title": "LH청약플러스 신혼부부 전세임대 사업안내",
+      "url": "https://apply.lh.or.kr/lhapply/cm/cntnts/cntntsView.do?cntntsId=1039&mi=1170",
+      "date": "2026-05-30",
+      "accessed": "2026-05-30",
+      "source_type": "official",
+      "is_official": true,
+      "freshness": "current"
+    },
+    {
+      "id": "nts-gift",
+      "title": "국세청 증여세 안내",
+      "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7728",
+      "date": "2026-05-30",
+      "accessed": "2026-05-30",
+      "source_type": "official",
+      "is_official": true,
+      "freshness": "current"
+    },
+    {
+      "id": "gov-move",
+      "title": "정부24 전입신고 관련 안내",
+      "url": "https://www.gov.kr/portal/ntcItm/103589?Mcode=11226",
+      "date": "2026-05-30",
+      "accessed": "2026-05-30",
+      "source_type": "official",
+      "is_official": true,
+      "freshness": "current"
+    },
+    {
+      "id": "kosis",
+      "title": "KOSIS 국가통계포털",
+      "url": "https://kosis.kr/index/index.jsp",
+      "date": "2026-05-30",
+      "accessed": "2026-05-30",
+      "source_type": "official",
+      "is_official": true,
+      "freshness": "current"
+    },
+    {
+      "id": "localdata",
+      "title": "LOCALDATA 지방행정인허가데이터개방",
+      "url": "https://www.localdata.go.kr/devcenter/bbs/devQnaInsert.do",
+      "date": "2026-05-30",
+      "accessed": "2026-05-30",
+      "source_type": "official",
+      "is_official": true,
+      "freshness": "current"
+    }
+  ],
+  "data_points": [
+    {
+      "claim": "주거·대출·청약·민원 정보는 공식 기관 안내에서 조건과 신청 경로를 확인해야 한다.",
+      "source_id": "lh-jeonse-rent",
+      "claim_type": "procedure",
+      "source_date": "2026-05-30"
+    },
+    {
+      "claim": "정부 민원과 가족관계 서류는 정부24 또는 관련 공식 시스템에서 처리 경로를 확인한다.",
+      "source_id": "nts-gift",
+      "claim_type": "institution",
+      "source_date": "2026-05-30"
+    },
+    {
+      "claim": "지역 통계와 인허가 데이터는 결혼·신혼 판단의 보조 지표이며 개별 계약 조건을 대신하지 않는다.",
+      "source_id": "localdata",
+      "claim_type": "data_context",
+      "source_date": "2026-05-30"
+    }
+  ]
+}
