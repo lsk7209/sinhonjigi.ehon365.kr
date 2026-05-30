@@ -7,8 +7,38 @@ const NAV_LINKS = [
   { href: "/jiwon", label: "지원금" },
   { href: "/wedding", label: "결혼식" },
   { href: "/sinhon", label: "신혼 생활" },
-  { href: "/wedding/guide", label: "가이드" },
+  { href: "/blog", label: "블로그" },
 ];
+
+function LogoMark() {
+  return (
+    <span
+      style={{
+        width: 30,
+        height: 30,
+        borderRadius: 10,
+        background: "var(--gradient-emphasis)",
+        display: "grid",
+        placeItems: "center",
+        boxShadow: "var(--shadow-sm)",
+        flexShrink: 0,
+      }}
+    >
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#fff"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M12 21s-7-4.5-9.5-9C.8 8.6 2.3 5 6 5c2.2 0 3.4 1.3 4 2.3C10.6 6.3 11.8 5 14 5c3.7 0 5.2 3.6 3.5 7-2.5 4.5-5.5 9-5.5 9Z" />
+      </svg>
+    </span>
+  );
+}
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -22,8 +52,8 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setMenuOpen(false);
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMenuOpen(false);
     };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
@@ -36,7 +66,7 @@ export default function Header() {
           position: "sticky",
           top: 0,
           zIndex: 50,
-          background: "rgba(255,251,247,.88)",
+          background: "rgba(255,253,252,.9)",
           backdropFilter: "saturate(150%) blur(14px)",
           WebkitBackdropFilter: "saturate(150%) blur(14px)",
           borderBottom: scrolled
@@ -48,7 +78,7 @@ export default function Header() {
       >
         <div
           style={{
-            maxWidth: 760,
+            maxWidth: 1120,
             margin: "0 auto",
             padding: "13px 20px",
             display: "flex",
@@ -57,119 +87,84 @@ export default function Header() {
             gap: 16,
           }}
         >
-          {/* 로고 */}
           <Link
             href="/"
             style={{
               display: "flex",
               alignItems: "center",
               gap: 9,
-              fontWeight: 700,
+              fontWeight: 800,
               color: "var(--text-strong)",
               fontSize: 19,
-              letterSpacing: "-0.02em",
+              letterSpacing: 0,
               textDecoration: "none",
             }}
           >
-            <span
-              style={{
-                width: 30,
-                height: 30,
-                borderRadius: 10,
-                background: "var(--gradient-emphasis)",
-                display: "grid",
-                placeItems: "center",
-                boxShadow: "var(--shadow-sm)",
-                flexShrink: 0,
-              }}
-            >
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#fff"
-                strokeWidth="2.2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M12 21s-7-4.5-9.5-9C.8 8.6 2.3 5 6 5c2.2 0 3.4 1.3 4 2.3C10.6 6.3 11.8 5 14 5c3.7 0 5.2 3.6 3.5 7-2.5 4.5-5.5 9-5.5 9Z" />
-              </svg>
-            </span>
+            <LogoMark />
             신혼지기
           </Link>
 
-          {/* 데스크톱 네비 */}
           <nav
             className="hidden md:flex"
             style={{ alignItems: "center", gap: 24 }}
+            aria-label="주요 메뉴"
           >
-            {NAV_LINKS.map((l) => (
+            {NAV_LINKS.map((link) => (
               <Link
-                key={l.href}
-                href={l.href}
+                key={link.href}
+                href={link.href}
                 style={{
                   fontSize: 15,
-                  fontWeight: 500,
+                  fontWeight: 650,
                   color: "var(--text-secondary)",
                   textDecoration: "none",
                   transition: "color .2s",
                 }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.color = "var(--accent-strong)")
+                onMouseEnter={(event) =>
+                  (event.currentTarget.style.color = "var(--accent-strong)")
                 }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.color = "var(--text-secondary)")
+                onMouseLeave={(event) =>
+                  (event.currentTarget.style.color = "var(--text-secondary)")
                 }
               >
-                {l.label}
+                {link.label}
               </Link>
             ))}
           </nav>
 
-          {/* 액션 */}
-          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-            <button
-              className="md:hidden"
-              onClick={() => setMenuOpen(true)}
-              aria-label="메뉴 열기"
-              style={{
-                width: 40,
-                height: 40,
-                border: "none",
-                background: "transparent",
-                borderRadius: 12,
-                color: "var(--text-default)",
-                display: "grid",
-                placeItems: "center",
-                cursor: "pointer",
-              }}
+          <button
+            className="md:hidden"
+            onClick={() => setMenuOpen(true)}
+            aria-label="메뉴 열기"
+            style={{
+              width: 40,
+              height: 40,
+              border: "none",
+              background: "transparent",
+              borderRadius: 12,
+              color: "var(--text-default)",
+              display: "grid",
+              placeItems: "center",
+              cursor: "pointer",
+            }}
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
             >
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-              >
-                <path d="M3 6h18M3 12h18M3 18h18" />
-              </svg>
-            </button>
-          </div>
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+          </button>
         </div>
       </header>
 
-      {/* 모바일 슬라이드 메뉴 */}
       {menuOpen && (
-        <div
-          style={{
-            position: "fixed",
-            inset: 0,
-            zIndex: 60,
-          }}
-        >
+        <div style={{ position: "fixed", inset: 0, zIndex: 60 }}>
           <div
             onClick={() => setMenuOpen(false)}
             style={{
@@ -205,34 +200,12 @@ export default function Header() {
                   display: "flex",
                   alignItems: "center",
                   gap: 9,
-                  fontWeight: 700,
+                  fontWeight: 800,
                   fontSize: 19,
                   color: "var(--text-strong)",
                 }}
               >
-                <span
-                  style={{
-                    width: 30,
-                    height: 30,
-                    borderRadius: 10,
-                    background: "var(--gradient-emphasis)",
-                    display: "grid",
-                    placeItems: "center",
-                  }}
-                >
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#fff"
-                    strokeWidth="2.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M12 21s-7-4.5-9.5-9C.8 8.6 2.3 5 6 5c2.2 0 3.4 1.3 4 2.3C10.6 6.3 11.8 5 14 5c3.7 0 5.2 3.6 3.5 7-2.5 4.5-5.5 9-5.5 9Z" />
-                  </svg>
-                </span>
+                <LogoMark />
                 신혼지기
               </span>
               <button
@@ -270,16 +243,17 @@ export default function Header() {
                 gap: 2,
                 marginTop: 8,
               }}
+              aria-label="모바일 메뉴"
             >
-              {NAV_LINKS.map((l) => (
+              {NAV_LINKS.map((link) => (
                 <Link
-                  key={l.href}
-                  href={l.href}
+                  key={link.href}
+                  href={link.href}
                   onClick={() => setMenuOpen(false)}
                   style={{
                     padding: "14px",
                     borderRadius: 12,
-                    fontWeight: 600,
+                    fontWeight: 700,
                     fontSize: 17,
                     color: "var(--text-strong)",
                     display: "flex",
@@ -288,7 +262,7 @@ export default function Header() {
                     textDecoration: "none",
                   }}
                 >
-                  {l.label}
+                  {link.label}
                   <svg
                     width="18"
                     height="18"
