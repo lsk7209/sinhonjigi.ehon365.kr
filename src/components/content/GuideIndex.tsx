@@ -1,7 +1,6 @@
 import Link from "next/link";
 import {
   getGuidesBySection,
-  getNextScheduledGuide,
   GUIDE_SECTION_LABEL,
   type GuideSection,
 } from "@/lib/guides";
@@ -12,7 +11,6 @@ interface Props {
 
 export default function GuideIndex({ section }: Props) {
   const guides = getGuidesBySection(section);
-  const nextGuide = getNextScheduledGuide(section);
   const label = GUIDE_SECTION_LABEL[section];
 
   return (
@@ -25,7 +23,7 @@ export default function GuideIndex({ section }: Props) {
           {label}
         </h1>
         <p className="mt-3 max-w-2xl text-[15.5px] leading-7 text-[var(--text-default)]">
-          신혼지기 편집 기준을 통과한 글만 예약 시각 이후 공개합니다. 정책,
+          신혼지기 편집 기준을 통과한 글만 공개 시각 이후 표시합니다. 정책,
           계약, 지원금 정보는 공식 출처 확인을 전제로 안내합니다.
         </p>
       </section>
@@ -61,13 +59,10 @@ export default function GuideIndex({ section }: Props) {
       ) : (
         <section className="mt-8 rounded-2xl border border-[var(--border)] bg-white p-6 shadow-[var(--shadow-sm)]">
           <h2 className="text-lg font-bold text-[var(--text-strong)]">
-            예약된 글을 준비 중입니다
+            공개된 글이 아직 없습니다
           </h2>
           <p className="mt-2 text-sm leading-6 text-[var(--text-secondary)]">
-            아직 공개 시각이 지난 글이 없습니다.
-            {nextGuide
-              ? ` 다음 글은 ${formatDateTime(nextGuide.scheduled_at)}에 공개됩니다.`
-              : " 생성된 예약 글이 있으면 이곳에 순차 공개됩니다."}
+            공개 시각이 지난 글만 이곳에 표시됩니다.
           </p>
         </section>
       )}
@@ -79,13 +74,5 @@ function formatDate(value: string) {
   return new Intl.DateTimeFormat("ko-KR", {
     month: "long",
     day: "numeric",
-  }).format(new Date(value));
-}
-
-function formatDateTime(value: string) {
-  return new Intl.DateTimeFormat("ko-KR", {
-    dateStyle: "medium",
-    timeStyle: "short",
-    timeZone: "Asia/Seoul",
   }).format(new Date(value));
 }

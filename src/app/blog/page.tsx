@@ -12,7 +12,7 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "블로그 | 신혼지기",
   description:
-    "신혼지기의 지원금, 결혼식, 신혼 생활 가이드를 예약 공개 일정과 함께 모아봅니다.",
+    "신혼지기의 지원금, 결혼식, 신혼 생활 공개 가이드를 한곳에서 모아봅니다.",
   alternates: { canonical: "/blog" },
 };
 
@@ -38,10 +38,9 @@ const sectionStyles = {
 } as const;
 
 export default function BlogPage() {
-  const guides = getAllGuides();
-  const published = guides.filter((guide) => isGuidePublic(guide));
-  const upcoming = guides.filter((guide) => !isGuidePublic(guide));
-  const visibleGuides = [...published, ...upcoming].slice(0, 100);
+  const visibleGuides = getAllGuides()
+    .filter((guide) => isGuidePublic(guide))
+    .slice(0, 100);
 
   return (
     <article className="mx-auto max-w-5xl px-5 py-8">
@@ -87,7 +86,7 @@ export default function BlogPage() {
           }}
         >
           지원금, 결혼식, 신혼 생활 가이드를 한곳에서 확인할 수 있습니다.
-          예약 글은 공개 시간이 지나면 자동으로 상세 페이지가 열립니다.
+          공개 시간이 지난 글만 블로그와 피드에 표시됩니다.
         </p>
         <div
           style={{
@@ -97,9 +96,7 @@ export default function BlogPage() {
             gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
           }}
         >
-          <StatCard label="전체 글" value={guides.length} />
-          <StatCard label="공개 글" value={published.length} />
-          <StatCard label="예약 글" value={upcoming.length} />
+          <StatCard label="공개 글" value={visibleGuides.length} />
         </div>
       </section>
 
@@ -151,7 +148,7 @@ export default function BlogPage() {
                 lineHeight: 1.6,
               }}
             >
-              섹션별 공개 글과 다음 예약 글을 확인합니다.
+              섹션별 공개 글을 확인합니다.
             </p>
           </Link>
         ))}
@@ -201,6 +198,39 @@ export default function BlogPage() {
           {visibleGuides.map((guide) => (
             <ArticleCard key={guide.id} guide={guide} />
           ))}
+          {visibleGuides.length === 0 ? (
+            <div
+              style={{
+                gridColumn: "1 / -1",
+                border: "1px solid var(--border)",
+                borderRadius: 18,
+                background: "var(--bg-card)",
+                padding: 22,
+                boxShadow: "var(--shadow-sm)",
+              }}
+            >
+              <h3
+                style={{
+                  color: "var(--text-strong)",
+                  fontSize: 18,
+                  fontWeight: 850,
+                  lineHeight: 1.42,
+                }}
+              >
+                공개된 글이 아직 없습니다
+              </h3>
+              <p
+                style={{
+                  marginTop: 8,
+                  color: "var(--text-secondary)",
+                  fontSize: 14.5,
+                  lineHeight: 1.7,
+                }}
+              >
+                공개 시간이 지난 글만 이곳에 표시됩니다.
+              </p>
+            </div>
+          ) : null}
         </div>
       </section>
     </article>
@@ -235,12 +265,10 @@ function StatCard({ label, value }: { label: string; value: number }) {
 
 function ArticleCard({ guide }: { guide: GuideArticle }) {
   const section = sectionStyles[guide.type];
-  const publicNow = isGuidePublic(guide);
-  const href = publicNow ? `/${guide.type}/guide/${guide.slug}` : `/${guide.type}/guide`;
 
   return (
     <Link
-      href={href}
+      href={`/${guide.type}/guide/${guide.slug}`}
       style={{
         border: "1px solid var(--border)",
         borderRadius: 18,
@@ -257,7 +285,6 @@ function ArticleCard({ guide }: { guide: GuideArticle }) {
         style={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-between",
           gap: 12,
         }}
       >
@@ -272,15 +299,6 @@ function ArticleCard({ guide }: { guide: GuideArticle }) {
           }}
         >
           {section.label}
-        </span>
-        <span
-          style={{
-            color: publicNow ? "var(--sage-500)" : "var(--text-caption)",
-            fontSize: 12,
-            fontWeight: 800,
-          }}
-        >
-          {publicNow ? "공개" : "예약"}
         </span>
       </div>
       <h3
