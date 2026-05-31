@@ -31,12 +31,10 @@ export interface GuideHeading {
 
 export function getGuideHeadings(body: string): GuideHeading[] {
   return toBlocks(body)
-    .filter((block): block is Extract<Block, { type: "h2" | "h3" }> =>
-      block.type === "h2" || block.type === "h3",
-    )
+    .filter((block): block is Extract<Block, { type: "h2" }> => block.type === "h2")
     .map((block) => ({
       id: block.id,
-      level: block.type === "h2" ? 2 : 3,
+      level: 2,
       text: block.text,
     }));
 }
@@ -89,6 +87,21 @@ function toBlocks(body: string): Block[] {
       continue;
     }
 
+    if (line.startsWith(">")) {
+      const content: string[] = [];
+      while (index < lines.length && lines[index].trim().startsWith(">")) {
+        content.push(lines[index].trim().replace(/^>\s?/, ""));
+        index += 1;
+      }
+      blocks.push({
+        type: "callout",
+        variant: "decision",
+        title: "",
+        blocks: toBlocks(content.join("\n")),
+      });
+      continue;
+    }
+
     if (line.startsWith("|")) {
       const tableLines: string[] = [];
       while (index < lines.length && lines[index].trim().startsWith("|")) {
@@ -126,6 +139,7 @@ function toBlocks(body: string): Block[] {
       !lines[index].trim().startsWith("## ") &&
       !lines[index].trim().startsWith("### ") &&
       !/^:::(info|caution|decision)\b/.test(lines[index].trim()) &&
+      !lines[index].trim().startsWith(">") &&
       !lines[index].trim().startsWith("|") &&
       !/^\d+\.\s+/.test(lines[index].trim()) &&
       !lines[index].trim().startsWith("- ")
@@ -275,35 +289,83 @@ function slugifyHeading(text: string) {
 }
 
 function renderInline(text: string) {
-  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*|\/[0-9a-z가-힣][^\s),.]*)/giu);
 
   return parts.map((part, index) => {
-    const match = /^\[([^\]]+)\]\(([^)]+)\)$/.exec(part);
-    if (!match) return <span key={index}>{part}</span>;
+    const linkMatch = /^\[([^\]]+)\]\(([^)]+)\)$/.exec(part);
+    if (linkMatch) {
+      const [, label, href] = linkMatch;
+      return renderLink(href, label, index);
+    }
 
-    const [, label, href] = match;
-    if (href.startsWith("/")) {
+    const boldMatch = /^\*\*([^*]+)\*\*$/.exec(part);
+    if (boldMatch) {
       return (
-        <Link
-          key={index}
-          href={href}
-          className="font-semibold text-[var(--article-accent,var(--lav-600))] underline"
-        >
-          {label}
-        </Link>
+        <strong key={index} className="font-extrabold text-[var(--text-strong)]">
+          {renderInline(boldMatch[1])}
+        </strong>
       );
     }
 
+    if (/^\/[^\s),.]+$/.test(part)) {
+      return renderLink(part, readableInternalPathLabel(part), index);
+    }
+
+    return <span key={index}>{part}</span>;
+  });
+}
+
+function renderLink(href: string, label: string, key: number) {
+  if (href.startsWith("/")) {
     return (
-      <a
-        key={index}
+      <Link
+        key={key}
         href={href}
-        target="_blank"
-        rel="noopener noreferrer"
         className="font-semibold text-[var(--article-accent,var(--lav-600))] underline"
       >
         {label}
-      </a>
+      </Link>
     );
-  });
+  }
+
+  return (
+    <a
+      key={key}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-semibold text-[var(--article-accent,var(--lav-600))] underline"
+    >
+      {label}
+    </a>
+  );
+}
+
+function readableInternalPathLabel(href: string) {
+  const parts = href.split("/").filter(Boolean);
+  const sectionLabels: Record<string, string> = {
+    jiwon: "지원금 가이드",
+    wedding: "결혼식 가이드",
+    sinhon: "신혼 생활 가이드",
+  };
+
+  if (parts.length === 1) return sectionLabels[parts[0]] ?? "관련 페이지 보기";
+
+  if (parts[1] === "guide" && parts[2]) {
+    return decodePathPart(parts[2]);
+  }
+
+  if (parts[1]?.startsWith("seoul-")) {
+    return "지역 페이지 보기";
+  }
+
+  return sectionLabels[parts[0]] ?? "관련 페이지 보기";
+}
+
+function decodePathPart(value: string) {
+  try {
+    return decodeURIComponent(value).replace(/-/g, " ");
+  } catch {
+    return value.replace(/-/g, " ");
+  }
 }
