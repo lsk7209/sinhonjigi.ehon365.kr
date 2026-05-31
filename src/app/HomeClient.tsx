@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useMemo, useState } from "react";
 
 const websiteJsonLd = {
   "@context": "https://schema.org",
@@ -10,124 +11,205 @@ const websiteJsonLd = {
   description: "공공데이터 기반 결혼·신혼 종합 정보 허브",
 };
 
-const HUBS = [
-  {
-    href: "/jiwon",
-    icon: (
-      <svg
-        width="28"
-        height="28"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="var(--lav-500)"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <rect x="3" y="8" width="18" height="4" rx="1" />
-        <path d="M12 8v12M19 12v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 19v-7" />
-        <path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5" />
-      </svg>
-    ),
-    bg: "var(--gradient-hero)",
-    border: "var(--lav-200)",
-    title: "결혼·신혼 지원금",
-    desc: "전국 및 지역별 결혼 지원금, 신혼부부 혜택을 한눈에 확인하세요.",
-    tag: "전세자금 · 축하금 · 주거지원",
-  },
-  {
-    href: "/wedding",
-    icon: (
-      <svg
-        width="28"
-        height="28"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="var(--pink-400)"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M12 21s-7-4.5-9.5-9C.8 8.6 2.3 5 6 5c2.2 0 3.4 1.3 4 2.3C10.6 6.3 11.8 5 14 5c3.7 0 5.2 3.6 3.5 7-2.5 4.5-5.5 9-5.5 9Z" />
-      </svg>
-    ),
-    bg: "linear-gradient(135deg,#FFF1F2 0%,#FFE4E6 100%)",
-    border: "var(--pink-200)",
-    title: "결혼식 정보",
-    desc: "예식장, 웨딩박람회, 스드메 등 결혼 준비에 필요한 모든 정보.",
-    tag: "박람회 · 예식장 · 스드메",
-  },
-  {
-    href: "/sinhon",
-    icon: (
-      <svg
-        width="28"
-        height="28"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="var(--sage-500)"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-        <polyline points="9 22 9 12 15 12 15 22" />
-      </svg>
-    ),
-    bg: "linear-gradient(135deg,var(--sage-100) 0%,#D7EFC9 100%)",
-    border: "var(--sage-300)",
-    title: "신혼 생활",
-    desc: "신혼부부 주거 지원, 맞벌이 통계, 지역별 생활 정보를 제공합니다.",
-    tag: "디딤돌 · 신혼희망타운 · 통계",
-  },
-];
+const ICON_PATHS = {
+  search: (
+    <>
+      <circle cx="11" cy="11" r="8" />
+      <path d="m21 21-4.3-4.3" />
+    </>
+  ),
+  sparkles: (
+    <>
+      <path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z" />
+      <path d="M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8Z" />
+    </>
+  ),
+  "map-pin": (
+    <>
+      <path d="M20 10c0 4.4-8 12-8 12s-8-7.6-8-12a8 8 0 0 1 16 0Z" />
+      <circle cx="12" cy="10" r="3" />
+    </>
+  ),
+  shield: (
+    <>
+      <path d="M20 13c0 5-3.5 7.5-8 8.5C7.5 20.5 4 18 4 13V6l8-3 8 3Z" />
+      <path d="m9 12 2 2 4-4" />
+    </>
+  ),
+  "refresh-cw": (
+    <>
+      <path d="M21 12a9 9 0 0 0-15.7-6.3L3 8" />
+      <path d="M3 3v5h5" />
+      <path d="M3 12a9 9 0 0 0 15.7 6.3L21 16" />
+      <path d="M16 16h5v5" />
+    </>
+  ),
+  "file-text": (
+    <>
+      <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+      <path d="M14 2v5h5M9 13h6M9 17h6" />
+    </>
+  ),
+  "arrow-right": (
+    <>
+      <path d="M5 12h14" />
+      <path d="m12 5 7 7-7 7" />
+    </>
+  ),
+  "arrow-up-right": (
+    <>
+      <path d="M7 17 17 7" />
+      <path d="M7 7h10v10" />
+    </>
+  ),
+  info: (
+    <>
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 16v-4M12 8h.01" />
+    </>
+  ),
+  check: <path d="M20 6 9 17l-5-5" />,
+  clock: (
+    <>
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 6v6l4 2" />
+    </>
+  ),
+  banknote: (
+    <>
+      <rect width="20" height="12" x="2" y="6" rx="2" />
+      <circle cx="12" cy="12" r="2" />
+      <path d="M6 12h.01M18 12h.01" />
+    </>
+  ),
+  "key-round": (
+    <>
+      <path d="M2.6 13.4A6 6 0 1 0 15 9a6 6 0 0 0-1.2 3.6L8 18l-2 2H4v-2l2-2" />
+      <circle cx="16.5" cy="7.5" r=".5" fill="currentColor" />
+    </>
+  ),
+  building: (
+    <>
+      <rect width="16" height="20" x="4" y="2" rx="1.5" />
+      <path d="M9 22v-4h6v4M9 6h.01M15 6h.01M9 10h.01M15 10h.01M9 14h.01M15 14h.01" />
+    </>
+  ),
+  baby: (
+    <>
+      <path d="M9 12h.01M15 12h.01M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5" />
+      <path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1" />
+    </>
+  ),
+};
 
-const POPULAR_REGIONS = [
-  { id: "seoul-gangnam", label: "서울 강남구" },
-  { id: "seoul-mapo", label: "서울 마포구" },
-  { id: "seoul-songpa", label: "서울 송파구" },
-  { id: "gyeonggi-suwon", label: "경기 수원시" },
-  { id: "gyeonggi-seongnam", label: "경기 성남시" },
-  { id: "busan-haeundae", label: "부산 해운대구" },
-  { id: "gyeonggi-goyang", label: "경기 고양시" },
-  { id: "daegu-suseong", label: "대구 수성구" },
-];
+type IconName = keyof typeof ICON_PATHS;
 
-const GUIDES = [
+function Icon({ name, size = 18 }: { name: IconName; size?: number }) {
+  return (
+    <svg
+      aria-hidden="true"
+      className="sj-icon"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      {ICON_PATHS[name]}
+    </svg>
+  );
+}
+
+const subsidies = [
   {
-    href: "/wedding/guide/박람회-활용법",
-    tag: "결혼식",
-    tagColor: "var(--pink-400)",
-    tagBg: "var(--pink-100)",
-    title: "웨딩박람회 100% 활용하는 법",
-    date: "2026.05.28",
-    read: "5분 읽기",
-    thumbBg: "linear-gradient(135deg,#FFE4E6 0%,#FECDD3 100%)",
-    strokeColor: "#FB7185",
+    href: "/jiwon/guide/신혼부부-전세자금-대출",
+    category: "주거",
+    icon: "key-round" as const,
+    status: "마감 임박",
+    statusType: "warning",
+    title: "신혼부부 임차보증금 이자지원",
+    amount: "연 최대 800만원",
+    note: "최장 10년 · 예산 소진 시까지",
+    eligibility: "혼인 7년 이내 또는 예비부부 · 무주택 · 임차보증금 기준 충족",
+    source: "서울주거포털",
   },
   {
-    href: "/jiwon/guide/전세자금-대출-비교",
-    tag: "지원금",
-    tagColor: "var(--lav-600)",
-    tagBg: "var(--lav-100)",
-    title: "신혼부부 전세자금 대출 3종 비교",
-    date: "2026.05.24",
-    read: "7분 읽기",
-    thumbBg: "var(--gradient-hero)",
-    strokeColor: "#8B5CF6",
+    href: "/jiwon/guide/결혼-지원금-조건",
+    category: "현금지원",
+    icon: "banknote" as const,
+    status: "상시",
+    statusType: "neutral",
+    title: "지역별 결혼살림·축하 지원",
+    amount: "최대 100만원",
+    note: "1회성 · 지자체별 상이",
+    eligibility: "혼인신고 후 거주 요건과 소득 요건을 동시에 확인해야 합니다",
+    source: "보조금24",
   },
   {
     href: "/sinhon/guide/신혼희망타운-청약",
-    tag: "신혼 생활",
-    tagColor: "var(--sage-500)",
-    tagBg: "var(--sage-100)",
-    title: "신혼희망타운 청약 조건과 신청 가이드",
-    date: "2026.05.20",
-    read: "6분 읽기",
-    thumbBg: "linear-gradient(135deg,var(--sage-100) 0%,#D7EFC9 100%)",
-    strokeColor: "#6FB060",
+    category: "대출",
+    icon: "building" as const,
+    status: "최근 업데이트",
+    statusType: "success",
+    title: "버팀목 전세자금대출 신혼 우대",
+    amount: "한도 3억원",
+    note: "금리 1%대부터 · 조건별 차등",
+    eligibility: "부부합산 소득·순자산·무주택 세대주 요건을 함께 봅니다",
+    source: "주택도시기금",
   },
 ];
+
+const popularRegions = [
+  { href: "/jiwon/seoul-gangnam", name: "서울 강남구", tag: "혜택 우수", count: 6 },
+  { href: "/jiwon/gyeonggi-suwon", name: "경기 수원시", tag: "주거지원", count: 8 },
+  { href: "/jiwon/seoul-songpa", name: "서울 송파구", tag: "", count: 5 },
+  { href: "/jiwon/busan-haeundae", name: "부산 해운대구", tag: "", count: 5 },
+  { href: "/jiwon/gyeonggi-seongnam", name: "경기 성남시", tag: "대출 비교", count: 7 },
+  { href: "/jiwon/daegu-suseong", name: "대구 수성구", tag: "", count: 4 },
+  { href: "/jiwon/sejong", name: "세종특별자치시", tag: "혜택 우수", count: 9 },
+  { href: "/jiwon/daejeon-yuseong", name: "대전 유성구", tag: "", count: 6 },
+];
+
+const updates = [
+  { date: "2026.05.30", region: "전국", type: "주거", text: "신혼부부 전세자금 대출 비교 가이드와 신청 전 체크리스트 보강" },
+  { date: "2026.05.29", region: "서울", type: "지원금", text: "임차보증금 이자지원 조건, 소득 기준, 준비서류 최신화" },
+  { date: "2026.05.28", region: "경기", type: "생활", text: "신혼희망타운 청약 조건과 지역별 생활비 가이드 추가" },
+];
+
+const guideLinks = [
+  { href: "/jiwon/guide/전세자금-대출-비교", title: "신혼부부 전세자금 대출 3종 비교", meta: "지원금 · 7분" },
+  { href: "/wedding/guide/박람회-활용법", title: "웨딩박람회 100% 활용하는 법", meta: "결혼식 · 5분" },
+  { href: "/sinhon/guide/신혼희망타운-청약", title: "신혼희망타운 청약 조건과 신청 가이드", meta: "신혼 생활 · 6분" },
+];
+
+function RegionSearch() {
+  const [query, setQuery] = useState("");
+  const target = useMemo(() => {
+    const found = popularRegions.find((region) =>
+      region.name.replace(/\s/g, "").includes(query.replace(/\s/g, "")),
+    );
+    return found?.href ?? "/jiwon";
+  }, [query]);
+
+  return (
+    <form className="sj-search" action={target}>
+      <Icon name="map-pin" size={20} />
+      <input
+        aria-label="지역 검색"
+        value={query}
+        onChange={(event) => setQuery(event.target.value)}
+        placeholder="시·군·구로 검색 (예: 강남구, 수원시)"
+      />
+      <button type="submit">
+        <Icon name="search" size={17} />
+        검색
+      </button>
+    </form>
+  );
+}
 
 export default function HomeClient() {
   return (
@@ -136,318 +218,217 @@ export default function HomeClient() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
       />
-      <style>{`
-        @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-        .hub-card{transition:transform .2s,box-shadow .2s}
-        .hub-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)!important}
-        .post-card-link{transition:transform .2s,box-shadow .2s,border-color .2s}
-        .post-card-link:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)!important;border-color:var(--lav-200)!important}
-        .region-chip{transition:.2s}
-        .region-chip:hover{border-color:var(--lav-300)!important;color:var(--text-default)!important}
-        ::-webkit-scrollbar{display:none}
-      `}</style>
 
-      <div
-        style={{
-          maxWidth: 760,
-          margin: "0 auto",
-          padding: "20px 20px 0",
-          animation: "fadeUp .45s ease-out both",
-        }}
-      >
-        {/* 페이지 헤더 */}
-        <div style={{ margin: "8px 0 4px" }}>
-          <div
-            style={{
-              fontSize: 13,
-              fontWeight: 600,
-              letterSpacing: ".02em",
-              color: "var(--lav-500)",
-              fontFamily: "'Inter',sans-serif",
-            }}
-          >
-            SINHONJIGI
-          </div>
-          <h1
-            style={{
-              fontSize: 30,
-              fontWeight: 700,
-              letterSpacing: "-.02em",
-              marginTop: 6,
-              color: "var(--text-strong)",
-            }}
-          >
-            결혼·신혼 정보의 모든 것
-          </h1>
-          <p
-            style={{
-              color: "var(--text-secondary)",
-              fontSize: 15.5,
-              marginTop: 7,
-              maxWidth: "90%",
-            }}
-          >
-            공공데이터 기반으로 지역별 지원금·예식장·신혼 통계를 정확하게
-            안내합니다.
-          </p>
-        </div>
-
-        {/* 허브 카드 3종 */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: 12,
-            marginTop: 24,
-          }}
-        >
-          {HUBS.map((hub) => (
-            <Link
-              key={hub.href}
-              href={hub.href}
-              className="hub-card"
-              style={{
-                display: "block",
-                borderRadius: 20,
-                border: `1px solid ${hub.border}`,
-                background: hub.bg,
-                boxShadow: "var(--shadow-md)",
-                textDecoration: "none",
-              }}
-            >
-              <div style={{ padding: "20px 22px 22px" }}>
-                <div
-                  style={{
-                    width: 44,
-                    height: 44,
-                    borderRadius: 14,
-                    background: "rgba(255,255,255,.7)",
-                    display: "grid",
-                    placeItems: "center",
-                    boxShadow: "var(--shadow-sm)",
-                  }}
-                >
-                  {hub.icon}
-                </div>
-                <h2
-                  style={{
-                    fontSize: 19,
-                    fontWeight: 700,
-                    marginTop: 12,
-                    color: "var(--text-strong)",
-                  }}
-                >
-                  {hub.title}
-                </h2>
-                <p
-                  style={{
-                    color: "var(--text-secondary)",
-                    fontSize: 15,
-                    marginTop: 6,
-                  }}
-                >
-                  {hub.desc}
-                </p>
-                <div
-                  style={{
-                    marginTop: 12,
-                    fontSize: 12.5,
-                    color: "var(--text-caption)",
-                    fontFamily: "'Inter',sans-serif",
-                    letterSpacing: ".01em",
-                  }}
-                >
-                  {hub.tag}
-                </div>
+      <div className="sj-home">
+        <section className="sj-hero">
+          <div className="sj-container sj-hero-grid">
+            <div>
+              <span className="sj-eyebrow sj-eyebrow-filled">
+                <Icon name="sparkles" size={14} />
+                신혼부부 지원금 데이터 플랫폼
+              </span>
+              <h1>우리 지역 신혼부부 지원금, 흩어진 정보를 한 화면에서.</h1>
+              <p className="sj-hero-lead">
+                주거·현금·대출·출산 지원을 지역별로 정리했습니다. 광고가 아닌{" "}
+                <strong>출처가 명확한 데이터</strong>로 받을 수 있는 혜택을 빠르게
+                확인하세요.
+              </p>
+              <RegionSearch />
+              <div className="sj-hero-meta">
+                <span>
+                  <Icon name="map-pin" size={14} /> 전국 시·군·구
+                </span>
+                <span>
+                  <Icon name="refresh-cw" size={14} /> 매주 갱신
+                </span>
+                <span>
+                  <Icon name="shield" size={14} /> 출처 5개+ 명시
+                </span>
               </div>
-            </Link>
-          ))}
-        </div>
+            </div>
 
-        {/* 인기 지역 */}
-        <section style={{ marginTop: 36 }}>
-          <h2
-            style={{
-              fontSize: 19,
-              fontWeight: 700,
-              color: "var(--text-strong)",
-              marginBottom: 14,
-            }}
-          >
-            지역별 지원금 바로가기
-          </h2>
-          <div
-            style={{
-              display: "flex",
-              overflowX: "auto",
-              gap: 8,
-              margin: "0 -20px",
-              padding: "2px 20px 8px",
-              scrollbarWidth: "none",
-            }}
-          >
-            {POPULAR_REGIONS.map((r) => (
-              <Link
-                key={r.id}
-                href={`/jiwon/${r.id}`}
-                className="region-chip"
-                style={{
-                  flexShrink: 0,
-                  border: "1px solid var(--border)",
-                  background: "var(--bg-card)",
-                  color: "var(--text-secondary)",
-                  fontSize: 14,
-                  fontWeight: 600,
-                  padding: "8px 15px",
-                  borderRadius: 999,
-                  textDecoration: "none",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                {r.label}
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        {/* 광고 슬롯 */}
-        <div style={{ margin: "28px 0" }}>
-          <div
-            style={{
-              fontSize: 11,
-              letterSpacing: ".06em",
-              color: "var(--text-caption)",
-              fontWeight: 600,
-              marginBottom: 6,
-              textTransform: "uppercase",
-              fontFamily: "'Inter',sans-serif",
-            }}
-          >
-            광고
-          </div>
-          <div
-            style={{
-              border: "1px dashed #E7DDD2",
-              borderRadius: 12,
-              background: "var(--bg-soft)",
-              minHeight: 92,
-              display: "grid",
-              placeItems: "center",
-              color: "var(--text-caption)",
-              fontSize: 13,
-            }}
-          >
-            AdSense 슬롯 · 반응형
-          </div>
-        </div>
-
-        {/* 가이드 섹션 */}
-        <section style={{ marginTop: 8, paddingBottom: 48 }}>
-          <h2
-            style={{
-              fontSize: 19,
-              fontWeight: 700,
-              color: "var(--text-strong)",
-              marginBottom: 14,
-            }}
-          >
-            결혼 준비 가이드
-          </h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            {GUIDES.map((post) => (
-              <Link
-                key={post.href}
-                href={post.href}
-                className="post-card-link"
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "96px 1fr",
-                  gap: 14,
-                  alignItems: "center",
-                  background: "var(--bg-card)",
-                  border: "1px solid var(--border)",
-                  borderRadius: 16,
-                  padding: 14,
-                  boxShadow: "var(--shadow-sm)",
-                  textDecoration: "none",
-                }}
-              >
-                <div
-                  style={{
-                    width: 96,
-                    height: 96,
-                    borderRadius: 12,
-                    background: post.thumbBg,
-                    display: "grid",
-                    placeItems: "center",
-                  }}
-                >
-                  <svg
-                    width="52"
-                    height="52"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke={post.strokeColor}
-                    strokeWidth="1.4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M12 21s-7-4.5-9.5-9C.8 8.6 2.3 5 6 5c2.2 0 3.4 1.3 4 2.3C10.6 6.3 11.8 5 14 5c3.7 0 5.2 3.6 3.5 7-2.5 4.5-5.5 9-5.5 9Z" />
-                  </svg>
+            <aside className="sj-snapshot" aria-label="데이터 스냅샷">
+              <div className="sj-snapshot-head">
+                <span>실시간 데이터 스냅샷</span>
+                <span className="sj-badge success">2026.05 기준</span>
+              </div>
+              <div className="sj-stat-grid">
+                <div>
+                  <strong>300</strong>
+                  <span>등록 가이드</span>
                 </div>
                 <div>
-                  <span
-                    style={{
-                      display: "inline-block",
-                      fontSize: 11.5,
-                      fontWeight: 700,
-                      padding: "3px 9px",
-                      borderRadius: 999,
-                      color: post.tagColor,
-                      background: post.tagBg,
-                    }}
-                  >
-                    {post.tag}
-                  </span>
-                  <h3
-                    style={{
-                      fontSize: 16,
-                      fontWeight: 700,
-                      marginTop: 7,
-                      lineHeight: 1.4,
-                      color: "var(--text-strong)",
-                    }}
-                  >
-                    {post.title}
-                  </h3>
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 8,
-                      marginTop: 8,
-                      fontSize: 12.5,
-                      color: "var(--text-caption)",
-                      fontFamily: "'Inter',sans-serif",
-                    }}
-                  >
-                    <span>{post.date}</span>
-                    <span
-                      style={{
-                        width: 3,
-                        height: 3,
-                        borderRadius: "50%",
-                        background: "var(--text-caption)",
-                        display: "inline-block",
-                      }}
-                    />
-                    <span>{post.read}</span>
-                  </div>
+                  <strong>228</strong>
+                  <span>전국 시·군·구</span>
                 </div>
+                <div>
+                  <strong>5</strong>
+                  <span>공식 데이터 출처</span>
+                </div>
+                <div>
+                  <strong>주 1회</strong>
+                  <span>갱신 주기</span>
+                </div>
+              </div>
+              <Link className="sj-snapshot-link" href="/jiwon/guide/전세자금-대출-비교">
+                <span>
+                  <Icon name="file-text" size={16} />
+                  2026 신혼부부 지원금 총정리 읽기
+                </span>
+                <Icon name="arrow-right" size={16} />
               </Link>
-            ))}
+            </aside>
           </div>
         </section>
+
+        <section className="sj-section">
+          <div className="sj-container">
+            <div className="sj-section-head">
+              <div>
+                <span className="sj-eyebrow">지금 받을 수 있는 혜택</span>
+                <h2>신혼부부 추천 지원금 Top 3</h2>
+                <p>아래 가정 조건을 기준으로 수급 가능성이 높은 순서입니다.</p>
+              </div>
+              <Link className="sj-btn secondary" href="/jiwon">
+                전체 보기 <Icon name="arrow-right" size={15} />
+              </Link>
+            </div>
+            <div className="sj-basis">
+              <Icon name="info" size={16} />
+              <p>
+                <strong>산정 기준</strong> 혼인신고 3년 이내 · 부부합산 연소득
+                7,000만원 · 무주택 · 자녀 1명 가정 기준 추정
+              </p>
+            </div>
+            <div className="sj-card-grid">
+              {subsidies.map((item) => (
+                <article className="sj-subsidy-card" key={item.title}>
+                  <div className="sj-card-top">
+                    <span className="sj-chip">
+                      <Icon name={item.icon} size={14} />
+                      {item.category}
+                    </span>
+                    <span className={`sj-badge ${item.statusType}`}>{item.status}</span>
+                  </div>
+                  <h3>{item.title}</h3>
+                  <strong className="sj-amount">{item.amount}</strong>
+                  <span className="sj-note">{item.note}</span>
+                  <p>
+                    <span>자격</span>
+                    {item.eligibility}
+                  </p>
+                  <div className="sj-card-foot">
+                    <span>
+                      <Icon name="info" size={13} /> {item.source}
+                    </span>
+                    <Link href={item.href}>
+                      신청 조건 보기 <Icon name="arrow-right" size={15} />
+                    </Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="sj-section sj-region-band">
+          <div className="sj-container">
+            <div className="sj-section-head">
+              <div>
+                <span className="sj-eyebrow">지역으로 둘러보기</span>
+                <h2>인기 지역</h2>
+                <p>조회가 많은 지역입니다. 선택하면 지역별 지원금 페이지로 이동합니다.</p>
+              </div>
+            </div>
+            <div className="sj-region-grid">
+              {popularRegions.map((region) => (
+                <Link className="sj-region-tile" href={region.href} key={region.name}>
+                  <span>
+                    <Icon name="map-pin" size={15} />
+                    {region.name}
+                    {region.tag ? <em>{region.tag}</em> : null}
+                  </span>
+                  <strong>
+                    {region.count}
+                    <small>개 프로그램</small>
+                    <Icon name="arrow-up-right" size={16} />
+                  </strong>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="sj-section">
+          <div className="sj-container sj-updates-grid">
+            <div>
+              <div className="sj-section-head">
+                <div>
+                  <span className="sj-eyebrow">변경 이력</span>
+                  <h2>최근 업데이트</h2>
+                </div>
+              </div>
+              <ul className="sj-update-list">
+                {updates.map((update) => (
+                  <li key={`${update.date}-${update.text}`}>
+                    <time>{update.date}</time>
+                    <div>
+                      <span className="sj-badge neutral">{update.type}</span>
+                      <span className="sj-update-region">{update.region}</span>
+                      <p>{update.text}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <aside className="sj-ad-card" aria-label="광고">
+              <span className="sj-ad-label">광고</span>
+              <h3>신혼부부 전세대출, 한도·금리 한 번에 비교</h3>
+              <p>제휴 금융사 조건을 입력 한 번으로 확인하고, 실제 신청 전 준비서류를 점검하세요.</p>
+              <Link className="sj-btn primary" href="/disclosure">
+                대출 비교 안내 <Icon name="arrow-right" size={15} />
+              </Link>
+              <small>유료광고 · 클릭 시 광고 고지 페이지로 이동합니다</small>
+            </aside>
+          </div>
+        </section>
+
+        <section className="sj-section">
+          <div className="sj-container sj-about-mini">
+            <div>
+              <span className="sj-eyebrow">운영 원칙</span>
+              <h2>광고가 아니라 정보로 판단을 돕습니다</h2>
+              <p>
+                신혼지기는 공공·금융 공식 데이터를 정제해 제공합니다. 모든 주요
+                정보에는 출처와 갱신일을 표기하고, 광고는 ‘광고’로 명확히
+                구분합니다.
+              </p>
+              <Link className="sj-btn secondary" href="/about">
+                운영팀 · 데이터 원칙 보기
+              </Link>
+            </div>
+            <div className="sj-guide-list">
+              {guideLinks.map((guide) => (
+                <Link href={guide.href} key={guide.href}>
+                  <span>{guide.meta}</span>
+                  <strong>{guide.title}</strong>
+                  <Icon name="arrow-right" size={15} />
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <div className="sj-container sj-disclosure">
+          <Icon name="info" size={15} />
+          <p>
+            일부 콘텐츠에는 <strong>유료광고</strong>가 포함되며 ‘광고’로 명확히
+            표기됩니다. 광고 수익은 정보 운영비에 사용되며, 지원금 데이터의
+            선정·순서에 영향을 주지 않습니다.{" "}
+            <Link href="/disclosure">광고 고지 보기</Link>
+          </p>
+        </div>
       </div>
     </>
   );

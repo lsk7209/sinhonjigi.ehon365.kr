@@ -9,5 +9,26 @@
     "jiwon": 40,
     "wedding": 35,
     "sinhon": 25
+  },
+  "latest_batch": {
+    "batch": "batch-3",
+    "added": 100,
+    "first_scheduled_at": "2026-07-08T02:00:00+09:00",
+    "last_scheduled_at": "2026-07-28T17:00:00+09:00",
+    "min_quality_score": 93,
+    "title_duplicate_count": 0,
+    "slug_duplicate_count": 0
+  },
+  "first_public_count": 20,
+  "first_public_window": {
+    "start": "2026-05-30T00:00:00+09:00",
+    "end": "2026-05-30T19:00:00+09:00"
+  },
+  "next_scheduled_after_public_batch": "2026-05-31T14:00:00+09:00",
+  "interval_hours": 5,
+  "title_quality_patch": {
+    "regenerated_titles": 300,
+    "rule": "display titles use deduped main keyword tokens, expanded keywords, corrected Korean particles, and varied phrase patterns",
+    "checked_at": "2026-05-31T02:29:18.096Z"
   }
 }

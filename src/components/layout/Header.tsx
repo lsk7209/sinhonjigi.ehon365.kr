@@ -16,26 +16,18 @@ function LogoMark() {
       style={{
         width: 30,
         height: 30,
-        borderRadius: 10,
-        background: "var(--gradient-emphasis)",
+        borderRadius: 8,
+        background: "var(--bg-dark)",
+        color: "var(--gold)",
         display: "grid",
         placeItems: "center",
         boxShadow: "var(--shadow-sm)",
         flexShrink: 0,
+        fontSize: 15,
+        fontWeight: 800,
       }}
     >
-      <svg
-        width="16"
-        height="16"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#fff"
-        strokeWidth="2.2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M12 21s-7-4.5-9.5-9C.8 8.6 2.3 5 6 5c2.2 0 3.4 1.3 4 2.3C10.6 6.3 11.8 5 14 5c3.7 0 5.2 3.6 3.5 7-2.5 4.5-5.5 9-5.5 9Z" />
-      </svg>
+      신
     </span>
   );
 }
@@ -66,12 +58,12 @@ export default function Header() {
           position: "sticky",
           top: 0,
           zIndex: 50,
-          background: "rgba(255,253,252,.9)",
-          backdropFilter: "saturate(150%) blur(14px)",
-          WebkitBackdropFilter: "saturate(150%) blur(14px)",
+          background: "rgba(248,244,236,.9)",
+          backdropFilter: "saturate(140%) blur(12px)",
+          WebkitBackdropFilter: "saturate(140%) blur(12px)",
           borderBottom: scrolled
             ? "1px solid var(--border)"
-            : "1px solid transparent",
+            : "1px solid var(--border)",
           boxShadow: scrolled ? "var(--shadow-sm)" : "none",
           transition: "border-color .25s, box-shadow .25s",
         }}
@@ -96,7 +88,7 @@ export default function Header() {
               fontWeight: 800,
               color: "var(--text-strong)",
               fontSize: 19,
-              letterSpacing: 0,
+              letterSpacing: "-.02em",
               textDecoration: "none",
             }}
           >
@@ -121,7 +113,7 @@ export default function Header() {
                   transition: "color .2s",
                 }}
                 onMouseEnter={(event) =>
-                  (event.currentTarget.style.color = "var(--accent-strong)")
+                  (event.currentTarget.style.color = "var(--gold-deep)")
                 }
                 onMouseLeave={(event) =>
                   (event.currentTarget.style.color = "var(--text-secondary)")

@@ -1,0 +1,124 @@
+{
+  "article_id": "a184",
+  "title": "부부 회의 주 1회 30분으로 끝내는 순서",
+  "main_keyword": "부부 회의",
+  "search_queries": [
+    "부부 회의 공식 안내",
+    "부부 회의 월예산 신청 기준",
+    "부부 회의 일정 서류",
+    "부부 회의 감정 FAQ"
+  ],
+  "research_runs": [
+    {
+      "query": "부부 회의 공식 안내",
+      "result": "official_reference_selected"
+    },
+    {
+      "query": "월예산 일정",
+      "result": "reader_decision_points_mapped"
+    },
+    {
+      "query": "감정 결정사항",
+      "result": "risk_and_document_points_mapped"
+    }
+  ],
+  "sources": [
+    {
+      "id": "gov24",
+      "name": "정부24",
+      "url": "https://www.gov.kr/portal/main",
+      "type": "official",
+      "official": true,
+      "accessed": "2026-05-31"
+    },
+    {
+      "id": "bokjiro",
+      "name": "복지로",
+      "url": "https://www.bokjiro.go.kr/",
+      "type": "official",
+      "official": true,
+      "accessed": "2026-05-31"
+    },
+    {
+      "id": "molit",
+      "name": "국토교통부",
+      "url": "https://www.molit.go.kr/",
+      "type": "official",
+      "official": true,
+      "accessed": "2026-05-31"
+    },
+    {
+      "id": "nhuf",
+      "name": "주택도시기금",
+      "url": "https://nhuf.molit.go.kr/",
+      "type": "official",
+      "official": true,
+      "accessed": "2026-05-31"
+    },
+    {
+      "id": "nts",
+      "name": "국세청",
+      "url": "https://www.nts.go.kr/",
+      "type": "official",
+      "official": true,
+      "accessed": "2026-05-31"
+    },
+    {
+      "id": "lh",
+      "name": "LH 청약플러스",
+      "url": "https://apply.lh.or.kr/",
+      "type": "official",
+      "official": true,
+      "accessed": "2026-05-31"
+    },
+    {
+      "id": "hf",
+      "name": "한국주택금융공사",
+      "url": "https://www.hf.go.kr/",
+      "type": "official",
+      "official": true,
+      "accessed": "2026-05-31"
+    },
+    {
+      "id": "localdata",
+      "name": "지방행정 인허가 데이터",
+      "url": "https://www.localdata.go.kr/",
+      "type": "official_data",
+      "official": true,
+      "accessed": "2026-05-31"
+    }
+  ],
+  "data_points": [
+    {
+      "claim": "신혼 관련 지원과 계약은 기준일 확인이 중요하다.",
+      "source_id": "gov24"
+    },
+    {
+      "claim": "주거와 대출 관련 판단은 공식 주거 정책 기관 안내를 우선 확인해야 한다.",
+      "source_id": "molit"
+    },
+    {
+      "claim": "정부 민원과 증명서 발급은 정부24 등 공식 민원 경로에서 확인한다.",
+      "source_id": "gov24"
+    },
+    {
+      "claim": "복지성 급여와 생애주기 지원은 복지로 또는 지자체 공고를 함께 확인한다.",
+      "source_id": "bokjiro"
+    },
+    {
+      "claim": "세금 공제와 증여 관련 판단은 국세청 안내와 증빙 가능성을 확인한다.",
+      "source_id": "nts"
+    }
+  ],
+  "ymyl_category": "finance/government_support/contract",
+  "ymyl_review": "pass",
+  "volatile": true,
+  "fact_traceability_pass": true,
+  "quality_gate": {
+    "score": 92,
+    "seo": 92,
+    "geo": 91,
+    "aeo": 92,
+    "pass": true
+  }
+}

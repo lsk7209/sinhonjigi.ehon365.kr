@@ -13,16 +13,17 @@ export default function Footer() {
   return (
     <footer
       style={{
-        marginTop: 56,
-        background: "var(--bg-soft)",
-        borderTop: "1px solid var(--border)",
+        marginTop: 72,
+        background: "var(--bg-dark)",
+        borderTop: "1px solid rgba(248,244,236,.14)",
+        color: "var(--text-on-dark)",
       }}
     >
       <div
         style={{
           maxWidth: 1120,
           margin: "0 auto",
-          padding: "32px 20px 48px",
+          padding: "42px 20px 48px",
         }}
       >
         <div
@@ -31,7 +32,7 @@ export default function Footer() {
             alignItems: "center",
             gap: 9,
             fontWeight: 800,
-            color: "var(--text-strong)",
+            color: "var(--text-on-dark)",
             fontSize: 16,
           }}
         >
@@ -40,24 +41,16 @@ export default function Footer() {
               width: 26,
               height: 26,
               borderRadius: 8,
-              background: "var(--gradient-emphasis)",
+              background: "var(--gold)",
+              color: "var(--bg-dark)",
               display: "grid",
               placeItems: "center",
               flexShrink: 0,
+              fontSize: 13,
+              fontWeight: 800,
             }}
           >
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#fff"
-              strokeWidth="2.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M12 21s-7-4.5-9.5-9C.8 8.6 2.3 5 6 5c2.2 0 3.4 1.3 4 2.3C10.6 6.3 11.8 5 14 5c3.7 0 5.2 3.6 3.5 7-2.5 4.5-5.5 9-5.5 9Z" />
-            </svg>
+            신
           </span>
           신혼지기
         </div>
@@ -73,7 +66,7 @@ export default function Footer() {
           <p
             style={{
               fontSize: 13.5,
-              color: "var(--text-secondary)",
+              color: "rgba(248,244,236,.72)",
               lineHeight: 1.7,
             }}
           >
@@ -84,7 +77,7 @@ export default function Footer() {
           <p
             style={{
               fontSize: 13.5,
-              color: "var(--text-secondary)",
+              color: "rgba(248,244,236,.72)",
               lineHeight: 1.7,
             }}
           >
@@ -92,7 +85,7 @@ export default function Footer() {
             <Link
               href="/disclosure"
               style={{
-                color: "var(--accent-strong)",
+                color: "var(--gold)",
                 textDecoration: "underline",
                 textUnderlineOffset: 3,
               }}
@@ -117,7 +110,7 @@ export default function Footer() {
               href={link.href}
               style={{
                 fontSize: 13,
-                color: "var(--text-caption)",
+                color: "rgba(248,244,236,.62)",
                 textDecoration: "none",
               }}
             >
@@ -130,7 +123,7 @@ export default function Footer() {
           style={{
             marginTop: 16,
             fontSize: 12.5,
-            color: "var(--text-caption)",
+            color: "rgba(248,244,236,.55)",
             fontFamily: "'Inter', sans-serif",
           }}
         >

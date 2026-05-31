@@ -3,6 +3,10 @@ import { absoluteUrl, escapeXml, siteUrl } from "@/lib/site";
 
 export const dynamic = "force-dynamic";
 
+const feedTitle = "\uC2E0\uD63C\uC9C0\uAE30 \uBE14\uB85C\uADF8";
+const feedDescription =
+  "\uC9C0\uC6D0\uAE08, \uACB0\uD63C, \uC2E0\uD63C \uC0DD\uD65C \uC815\uBCF4\uB97C \uC815\uB9AC\uD558\uB294 \uC2E0\uD63C\uC9C0\uAE30 \uCD5C\uC2E0 \uAE00\uC785\uB2C8\uB2E4.";
+
 export function GET() {
   const now = new Date();
   const feedUrl = absoluteUrl("/rss.xml");
@@ -30,9 +34,9 @@ export function GET() {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>신혼지기 블로그</title>
+    <title>${escapeXml(feedTitle)}</title>
     <link>${escapeXml(siteUrl)}</link>
-    <description>지원금, 결혼식, 신혼 생활 정보를 정리한 신혼지기 최신 글입니다.</description>
+    <description>${escapeXml(feedDescription)}</description>
     <language>ko-KR</language>
     <atom:link href="${escapeXml(feedUrl)}" rel="self" type="application/rss+xml" />
     <lastBuildDate>${now.toUTCString()}</lastBuildDate>

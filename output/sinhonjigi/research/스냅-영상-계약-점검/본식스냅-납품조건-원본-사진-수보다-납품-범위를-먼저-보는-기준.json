@@ -1,0 +1,112 @@
+{
+  "article_id": "a226",
+  "batch": "batch-3",
+  "title": "본식스냅 납품조건 원본 사진 수보다 납품 범위를 먼저 보는 기준",
+  "main_keyword": "본식스냅 납품조건",
+  "expanded_keywords": [
+    "원본",
+    "보정본",
+    "납기",
+    "저작권"
+  ],
+  "search_queries": [
+    "본식스냅 납품조건 공식 안내",
+    "본식스냅 납품조건 원본 기준",
+    "본식스냅 납품조건 보정본 서류",
+    "본식스냅 납품조건 납기 FAQ",
+    "본식스냅 납품조건 저작권 주의사항"
+  ],
+  "research_runs": [
+    {
+      "query": "본식스냅 납품조건 공식 안내",
+      "result": "official_source_priority"
+    },
+    {
+      "query": "원본 보정본",
+      "result": "decision_points_mapped"
+    },
+    {
+      "query": "납기 저작권",
+      "result": "risk_points_mapped"
+    }
+  ],
+  "sources": [
+    {
+      "id": "gov24",
+      "name": "정부24",
+      "url": "https://www.gov.kr/portal/main",
+      "type": "official",
+      "official": true,
+      "accessed": "2026-05-31"
+    },
+    {
+      "id": "bokjiro",
+      "name": "복지로",
+      "url": "https://www.bokjiro.go.kr/",
+      "type": "official",
+      "official": true,
+      "accessed": "2026-05-31"
+    },
+    {
+      "id": "molit",
+      "name": "국토교통부",
+      "url": "https://www.molit.go.kr/",
+      "type": "official",
+      "official": true,
+      "accessed": "2026-05-31"
+    },
+    {
+      "id": "nts",
+      "name": "국세청",
+      "url": "https://www.nts.go.kr/",
+      "type": "official",
+      "official": true,
+      "accessed": "2026-05-31"
+    },
+    {
+      "id": "fairtrade",
+      "name": "공정거래위원회",
+      "url": "https://www.ftc.go.kr/",
+      "type": "official",
+      "official": true,
+      "accessed": "2026-05-31"
+    }
+  ],
+  "data_points": [
+    {
+      "claim": "민원, 증명, 행정 절차는 정부24 등 공식 경로에서 최신 안내와 제출처를 확인해야 한다.",
+      "source_id": "gov24"
+    },
+    {
+      "claim": "복지와 지원 제도는 대상, 지역, 예산, 신청 기한이 달라질 수 있어 복지로 또는 지자체 공고 확인이 필요하다.",
+      "source_id": "bokjiro"
+    },
+    {
+      "claim": "주택, 전월세, 청약, 보증 관련 판단은 국토교통부와 관련 공공기관 안내를 우선 확인해야 한다.",
+      "source_id": "molit"
+    },
+    {
+      "claim": "세금, 공제, 자금출처 관련 항목은 국세청 안내와 증빙 가능성을 함께 확인해야 한다.",
+      "source_id": "nts"
+    },
+    {
+      "claim": "계약, 위약금, 소비자 분쟁 가능성이 있는 항목은 계약서와 공식 소비자 기준을 함께 봐야 한다.",
+      "source_id": "fairtrade"
+    }
+  ],
+  "ymyl_category": "contract/consumer",
+  "ymyl_review": "pass",
+  "volatile": true,
+  "fact_traceability_pass": true,
+  "freshness_note": "조건과 금액은 변동될 수 있어 공식 출처 재확인을 본문에 명시함",
+  "quality_gate": {
+    "score": 93,
+    "seo": 94,
+    "geo": 93,
+    "aeo": 94,
+    "structure_variation": "pass",
+    "visual_elements": "pass",
+    "heading_quality": "pass",
+    "pass": true
+  }
+}

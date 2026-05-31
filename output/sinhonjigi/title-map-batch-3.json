@@ -1,0 +1,2812 @@
+{
+  "site": "sinhonjigi",
+  "batch": "batch-3",
+  "created": "2026-05-31T00:00:00+09:00",
+  "count": 100,
+  "existing_count_before_batch": 200,
+  "articles": [
+    {
+      "id": "a201",
+      "title": "전자문서지갑 기준으로 정리한 정부24 가족관계증명서 준비 비교형 가이드",
+      "subtitle": "정부24 가족관계증명서 준비를 전자문서지갑, 제출처, 유효기간, 공동인증서 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "정부24 가족관계증명서 준비",
+      "expanded_keywords": [
+        "전자문서지갑",
+        "제출처",
+        "유효기간",
+        "공동인증서"
+      ],
+      "cluster": "신혼 행정 자동화",
+      "scheduled_at": "2026-07-08T02:00:00+09:00",
+      "unique_angle": "제출 직전에 다시 발급해야 하는 서류를 줄이는 순서",
+      "structure_type": "비교형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-행정-자동화/정부24-가족관계증명서-준비-전자문서지갑-제출-직전에-다시-발급해야-하는-서류를-줄이는-순서.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-행정-자동화/정부24-가족관계증명서-준비-전자문서지갑-제출-직전에-다시-발급해야-하는-서류를-줄이는-순서.json"
+    },
+    {
+      "id": "a202",
+      "title": "혼인신고 후 행정 변경 준비 전 주소변경과 건강보험 먼저 확인하기",
+      "subtitle": "혼인신고 후 행정 변경를 주소변경, 건강보험, 자동차등록, 은행정보 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "혼인신고 후 행정 변경",
+      "expanded_keywords": [
+        "주소변경",
+        "건강보험",
+        "자동차등록",
+        "은행정보"
+      ],
+      "cluster": "신혼 행정 자동화",
+      "scheduled_at": "2026-07-08T07:00:00+09:00",
+      "unique_angle": "부부가 따로 처리할 항목과 같이 처리할 항목 구분법",
+      "structure_type": "체크리스트형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-행정-자동화/혼인신고-후-행정-변경-주소변경-부부가-따로-처리할-항목과-같이-처리할-항목-구분법.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-행정-자동화/혼인신고-후-행정-변경-주소변경-부부가-따로-처리할-항목과-같이-처리할-항목-구분법.json"
+    },
+    {
+      "id": "a203",
+      "title": "전자문서지갑 신혼 서류 모바일제출 실전 점검표와 원본확인 준비법",
+      "subtitle": "전자문서지갑 신혼 서류를 모바일제출, 원본확인, 기관제출, 보관기간 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "전자문서지갑 신혼 서류",
+      "expanded_keywords": [
+        "모바일제출",
+        "원본확인",
+        "기관제출",
+        "보관기간"
+      ],
+      "cluster": "신혼 행정 자동화",
+      "scheduled_at": "2026-07-08T12:00:00+09:00",
+      "unique_angle": "캡처본 대신 제출 가능한 문서를 고르는 기준",
+      "structure_type": "절차형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-행정-자동화/전자문서지갑-신혼-서류-모바일제출-캡처본-대신-제출-가능한-문서를-고르는-기준.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-행정-자동화/전자문서지갑-신혼-서류-모바일제출-캡처본-대신-제출-가능한-문서를-고르는-기준.json"
+    },
+    {
+      "id": "a204",
+      "title": "신혼부부 민원 알림 설정 정부24 한눈에 정리, 복지로 실무 흐름",
+      "subtitle": "신혼부부 민원 알림 설정를 정부24, 복지로, 청약알림, 지자체공고 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼부부 민원 알림 설정",
+      "expanded_keywords": [
+        "정부24",
+        "복지로",
+        "청약알림",
+        "지자체공고"
+      ],
+      "cluster": "신혼 행정 자동화",
+      "scheduled_at": "2026-07-08T17:00:00+09:00",
+      "unique_angle": "놓친 지원금을 줄이는 알림 조합 만들기",
+      "structure_type": "문제해결형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-행정-자동화/신혼부부-민원-알림-설정-정부24-놓친-지원금을-줄이는-알림-조합-만들기.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-행정-자동화/신혼부부-민원-알림-설정-정부24-놓친-지원금을-줄이는-알림-조합-만들기.json"
+    },
+    {
+      "id": "a205",
+      "title": "등본과 가족관계증명서로 보는 부부 공동 서류 폴더 전략",
+      "subtitle": "부부 공동 서류 폴더를 등본, 가족관계증명서, 계약서, 납입증빙 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "부부 공동 서류 폴더",
+      "expanded_keywords": [
+        "등본",
+        "가족관계증명서",
+        "계약서",
+        "납입증빙"
+      ],
+      "cluster": "신혼 행정 자동화",
+      "scheduled_at": "2026-07-08T22:00:00+09:00",
+      "unique_angle": "신청 직전 허둥대지 않는 파일명 규칙",
+      "structure_type": "FAQ형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-행정-자동화/부부-공동-서류-폴더-등본-신청-직전-허둥대지-않는-파일명-규칙.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-행정-자동화/부부-공동-서류-폴더-등본-신청-직전-허둥대지-않는-파일명-규칙.json"
+    },
+    {
+      "id": "a206",
+      "title": "신혼집 자금출처 메모 증여 비용 판단 기준, 계좌이체 주의점",
+      "subtitle": "신혼집 자금출처 메모를 증여, 차용증, 계좌이체, 혼인공제 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼집 자금출처 메모",
+      "expanded_keywords": [
+        "증여",
+        "차용증",
+        "계좌이체",
+        "혼인공제"
+      ],
+      "cluster": "신혼 자금출처 방어",
+      "scheduled_at": "2026-07-09T03:00:00+09:00",
+      "unique_angle": "부모 도움과 부부 저축을 분리 기록하는 법",
+      "structure_type": "사례형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-자금출처-방어/신혼집-자금출처-메모-증여-부모-도움과-부부-저축을-분리-기록하는-법.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-자금출처-방어/신혼집-자금출처-메모-증여-부모-도움과-부부-저축을-분리-기록하는-법.json"
+    },
+    {
+      "id": "a207",
+      "title": "부모님 지원금 차용증 이자율 최종 점검포인트, 상환일정과 증빙보관",
+      "subtitle": "부모님 지원금 차용증를 이자율, 상환일정, 계좌기록, 증빙보관 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "부모님 지원금 차용증",
+      "expanded_keywords": [
+        "이자율",
+        "상환일정",
+        "계좌기록",
+        "증빙보관"
+      ],
+      "cluster": "신혼 자금출처 방어",
+      "scheduled_at": "2026-07-09T08:00:00+09:00",
+      "unique_angle": "가족 간 돈거래를 말로만 남기지 않는 기준",
+      "structure_type": "의사결정형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-자금출처-방어/부모님-지원금-차용증-이자율-가족-간-돈거래를-말로만-남기지-않는-기준.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-자금출처-방어/부모님-지원금-차용증-이자율-가족-간-돈거래를-말로만-남기지-않는-기준.json"
+    },
+    {
+      "id": "a208",
+      "title": "혼수 비용 증빙 관리 실수 방지 가이드, 카드영수증부터 계약금까지",
+      "subtitle": "혼수 비용 증빙 관리를 카드영수증, 계약금, 환불조건, 배송일 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "혼수 비용 증빙 관리",
+      "expanded_keywords": [
+        "카드영수증",
+        "계약금",
+        "환불조건",
+        "배송일"
+      ],
+      "cluster": "신혼 자금출처 방어",
+      "scheduled_at": "2026-07-09T13:00:00+09:00",
+      "unique_angle": "큰 지출을 나중에 설명 가능하게 남기는 순서",
+      "structure_type": "일정관리형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-자금출처-방어/혼수-비용-증빙-관리-카드영수증-큰-지출을-나중에-설명-가능하게-남기는-순서.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-자금출처-방어/혼수-비용-증빙-관리-카드영수증-큰-지출을-나중에-설명-가능하게-남기는-순서.json"
+    },
+    {
+      "id": "a209",
+      "title": "입금자명 신청 전 확인법: 신혼 전세보증금 이체 실전 가이드",
+      "subtitle": "신혼 전세보증금 이체를 입금자명, 계약자, 영수증, 확정일자 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼 전세보증금 이체",
+      "expanded_keywords": [
+        "입금자명",
+        "계약자",
+        "영수증",
+        "확정일자"
+      ],
+      "cluster": "신혼 자금출처 방어",
+      "scheduled_at": "2026-07-09T18:00:00+09:00",
+      "unique_angle": "계약서와 계좌 기록을 맞추는 체크포인트",
+      "structure_type": "실수예방형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-자금출처-방어/신혼-전세보증금-이체-입금자명-계약서와-계좌-기록을-맞추는-체크포인트.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-자금출처-방어/신혼-전세보증금-이체-입금자명-계약서와-계좌-기록을-맞추는-체크포인트.json"
+    },
+    {
+      "id": "a210",
+      "title": "부부 공동저축 출처정리 월급통장 절차 한눈에 정리, 적금해지 확인 순서",
+      "subtitle": "부부 공동저축 출처정리를 월급통장, 적금해지, 비상금, 대출실행 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "부부 공동저축 출처정리",
+      "expanded_keywords": [
+        "월급통장",
+        "적금해지",
+        "비상금",
+        "대출실행"
+      ],
+      "cluster": "신혼 자금출처 방어",
+      "scheduled_at": "2026-07-09T23:00:00+09:00",
+      "unique_angle": "집 계약 전 자금 흐름표를 만드는 방법",
+      "structure_type": "문서점검형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-자금출처-방어/부부-공동저축-출처정리-월급통장-집-계약-전-자금-흐름표를-만드는-방법.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-자금출처-방어/부부-공동저축-출처정리-월급통장-집-계약-전-자금-흐름표를-만드는-방법.json"
+    },
+    {
+      "id": "a211",
+      "title": "지자체 신혼 지원금 전화문의 거주기간 지원 기준, 예산소진 최종 점검포인트",
+      "subtitle": "지자체 신혼 지원금 전화문의를 거주기간, 예산소진, 신청기한, 구비서류 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "지자체 신혼 지원금 전화문의",
+      "expanded_keywords": [
+        "거주기간",
+        "예산소진",
+        "신청기한",
+        "구비서류"
+      ],
+      "cluster": "지역 지원금 문의 전략",
+      "scheduled_at": "2026-07-10T04:00:00+09:00",
+      "unique_angle": "전화 전에 물어볼 질문을 한 장으로 정리하는 법",
+      "structure_type": "비교형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/지역-지원금-문의-전략/지자체-신혼-지원금-전화문의-거주기간-전화-전에-물어볼-질문을-한-장으로-정리하는-법.mdx",
+      "research_path": "output/sinhonjigi/research/지역-지원금-문의-전략/지자체-신혼-지원금-전화문의-거주기간-전화-전에-물어볼-질문을-한-장으로-정리하는-법.json"
+    },
+    {
+      "id": "a212",
+      "title": "행정복지센터 방문 준비 신분증 현실 가이드, 등본 기준과 체크리스트",
+      "subtitle": "행정복지센터 방문 준비를 신분증, 등본, 혼인관계, 통장사본 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "행정복지센터 방문 준비",
+      "expanded_keywords": [
+        "신분증",
+        "등본",
+        "혼인관계",
+        "통장사본"
+      ],
+      "cluster": "지역 지원금 문의 전략",
+      "scheduled_at": "2026-07-10T09:00:00+09:00",
+      "unique_angle": "헛걸음을 줄이는 방문 전 확인 순서",
+      "structure_type": "체크리스트형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/지역-지원금-문의-전략/행정복지센터-방문-준비-신분증-헛걸음을-줄이는-방문-전-확인-순서.mdx",
+      "research_path": "output/sinhonjigi/research/지역-지원금-문의-전략/행정복지센터-방문-준비-신분증-헛걸음을-줄이는-방문-전-확인-순서.json"
+    },
+    {
+      "id": "a213",
+      "title": "가맹점 확인 순서로 보는 지역화폐 결혼지원 사용처 서류와 일정 정리",
+      "subtitle": "지역화폐 결혼지원 사용처를 가맹점, 유효기간, 사용제한, 환불불가 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "지역화폐 결혼지원 사용처",
+      "expanded_keywords": [
+        "가맹점",
+        "유효기간",
+        "사용제한",
+        "환불불가"
+      ],
+      "cluster": "지역 지원금 문의 전략",
+      "scheduled_at": "2026-07-10T14:00:00+09:00",
+      "unique_angle": "현금처럼 보이는 지원의 실제 제한 확인법",
+      "structure_type": "절차형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/지역-지원금-문의-전략/지역화폐-결혼지원-사용처-가맹점-현금처럼-보이는-지원의-실제-제한-확인법.mdx",
+      "research_path": "output/sinhonjigi/research/지역-지원금-문의-전략/지역화폐-결혼지원-사용처-가맹점-현금처럼-보이는-지원의-실제-제한-확인법.json"
+    },
+    {
+      "id": "a214",
+      "title": "복지로 지자체 공고 검색 생애주기 전략, 가구조건과 지역검색 판단 기준",
+      "subtitle": "복지로 지자체 공고 검색를 생애주기, 가구조건, 지역검색, 담당부서 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "복지로 지자체 공고 검색",
+      "expanded_keywords": [
+        "생애주기",
+        "가구조건",
+        "지역검색",
+        "담당부서"
+      ],
+      "cluster": "지역 지원금 문의 전략",
+      "scheduled_at": "2026-07-10T19:00:00+09:00",
+      "unique_angle": "키워드보다 조건 필터로 찾는 방법",
+      "structure_type": "문제해결형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/지역-지원금-문의-전략/복지로-지자체-공고-검색-생애주기-키워드보다-조건-필터로-찾는-방법.mdx",
+      "research_path": "output/sinhonjigi/research/지역-지원금-문의-전략/복지로-지자체-공고-검색-생애주기-키워드보다-조건-필터로-찾는-방법.json"
+    },
+    {
+      "id": "a215",
+      "title": "신혼 지원금 중복수급 확인 중앙지원 준비 전 지자체지원 최종 점검포인트",
+      "subtitle": "신혼 지원금 중복수급 확인를 중앙지원, 지자체지원, 회사복지, 소득기준 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼 지원금 중복수급 확인",
+      "expanded_keywords": [
+        "중앙지원",
+        "지자체지원",
+        "회사복지",
+        "소득기준"
+      ],
+      "cluster": "지역 지원금 문의 전략",
+      "scheduled_at": "2026-07-11T00:00:00+09:00",
+      "unique_angle": "받아도 되는 지원과 충돌하는 지원 구분법",
+      "structure_type": "FAQ형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/지역-지원금-문의-전략/신혼-지원금-중복수급-확인-중앙지원-받아도-되는-지원과-충돌하는-지원-구분법.mdx",
+      "research_path": "output/sinhonjigi/research/지역-지원금-문의-전략/신혼-지원금-중복수급-확인-중앙지원-받아도-되는-지원과-충돌하는-지원-구분법.json"
+    },
+    {
+      "id": "a216",
+      "title": "전세보증보험 가입 거절 대비 보증한도 기준과 체크리스트",
+      "subtitle": "전세보증보험 가입 거절 대비를 보증한도, 선순위채권, 임대인동의, 주택가격 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "전세보증보험 가입 거절 대비",
+      "expanded_keywords": [
+        "보증한도",
+        "선순위채권",
+        "임대인동의",
+        "주택가격"
+      ],
+      "cluster": "주택 보증 리스크",
+      "scheduled_at": "2026-07-11T05:00:00+09:00",
+      "unique_angle": "계약 전에 거절 가능성을 먼저 거르는 기준",
+      "structure_type": "사례형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/주택-보증-리스크/전세보증보험-가입-거절-대비-보증한도-계약-전에-거절-가능성을-먼저-거르는-기준.mdx",
+      "research_path": "output/sinhonjigi/research/주택-보증-리스크/전세보증보험-가입-거절-대비-보증한도-계약-전에-거절-가능성을-먼저-거르는-기준.json"
+    },
+    {
+      "id": "a217",
+      "title": "임대인 세금체납 확인, 열람동의부터 미납국세까지 신청 전 확인법",
+      "subtitle": "임대인 세금체납 확인를 열람동의, 미납국세, 보증금, 계약특약 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "임대인 세금체납 확인",
+      "expanded_keywords": [
+        "열람동의",
+        "미납국세",
+        "보증금",
+        "계약특약"
+      ],
+      "cluster": "주택 보증 리스크",
+      "scheduled_at": "2026-07-11T10:00:00+09:00",
+      "unique_angle": "보증금 위험을 계약서 문장으로 줄이는 법",
+      "structure_type": "의사결정형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/주택-보증-리스크/임대인-세금체납-확인-열람동의-보증금-위험을-계약서-문장으로-줄이는-법.mdx",
+      "research_path": "output/sinhonjigi/research/주택-보증-리스크/임대인-세금체납-확인-열람동의-보증금-위험을-계약서-문장으로-줄이는-법.json"
+    },
+    {
+      "id": "a218",
+      "title": "등기부등본으로 보는 선순위 근저당 확인 실수 줄이는 준비 순서",
+      "subtitle": "선순위 근저당 확인를 등기부등본, 채권최고액, 말소조건, 잔금일 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "선순위 근저당 확인",
+      "expanded_keywords": [
+        "등기부등본",
+        "채권최고액",
+        "말소조건",
+        "잔금일"
+      ],
+      "cluster": "주택 보증 리스크",
+      "scheduled_at": "2026-07-11T15:00:00+09:00",
+      "unique_angle": "싸 보이는 전세를 숫자로 다시 보는 순서",
+      "structure_type": "일정관리형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/주택-보증-리스크/선순위-근저당-확인-등기부등본-싸-보이는-전세를-숫자로-다시-보는-순서.mdx",
+      "research_path": "output/sinhonjigi/research/주택-보증-리스크/선순위-근저당-확인-등기부등본-싸-보이는-전세를-숫자로-다시-보는-순서.json"
+    },
+    {
+      "id": "a219",
+      "title": "전입신고 확정일자 타이밍 잔금일 FAQ와 입주일 확인법",
+      "subtitle": "전입신고 확정일자 타이밍를 잔금일, 입주일, 대항력, 우선변제 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "전입신고 확정일자 타이밍",
+      "expanded_keywords": [
+        "잔금일",
+        "입주일",
+        "대항력",
+        "우선변제"
+      ],
+      "cluster": "주택 보증 리스크",
+      "scheduled_at": "2026-07-11T20:00:00+09:00",
+      "unique_angle": "하루 차이가 리스크가 되는 지점 확인법",
+      "structure_type": "실수예방형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/주택-보증-리스크/전입신고-확정일자-타이밍-잔금일-하루-차이가-리스크가-되는-지점-확인법.mdx",
+      "research_path": "output/sinhonjigi/research/주택-보증-리스크/전입신고-확정일자-타이밍-잔금일-하루-차이가-리스크가-되는-지점-확인법.json"
+    },
+    {
+      "id": "a220",
+      "title": "전세 계약 특약 문장 비교 가이드, 보증보험과 하자보수 판단 기준",
+      "subtitle": "전세 계약 특약 문장를 보증보험, 하자보수, 대출불가, 계약해제 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "전세 계약 특약 문장",
+      "expanded_keywords": [
+        "보증보험",
+        "하자보수",
+        "대출불가",
+        "계약해제"
+      ],
+      "cluster": "주택 보증 리스크",
+      "scheduled_at": "2026-07-12T01:00:00+09:00",
+      "unique_angle": "분쟁 때 쓸 수 있는 문장과 못 쓰는 문장 구분",
+      "structure_type": "문서점검형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/주택-보증-리스크/전세-계약-특약-문장-보증보험-분쟁-때-쓸-수-있는-문장과-못-쓰는-문장-구분.mdx",
+      "research_path": "output/sinhonjigi/research/주택-보증-리스크/전세-계약-특약-문장-보증보험-분쟁-때-쓸-수-있는-문장과-못-쓰는-문장-구분.json"
+    },
+    {
+      "id": "a221",
+      "title": "예식장 계약서 특약 보증인원 상황별 판단 가이드",
+      "subtitle": "예식장 계약서 특약를 보증인원, 식대, 대관료, 취소수수료 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "예식장 계약서 특약",
+      "expanded_keywords": [
+        "보증인원",
+        "식대",
+        "대관료",
+        "취소수수료"
+      ],
+      "cluster": "예식장 계약서 방어",
+      "scheduled_at": "2026-07-12T06:00:00+09:00",
+      "unique_angle": "상담 말과 계약서 문장을 맞추는 확인법",
+      "structure_type": "비교형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/예식장-계약서-방어/예식장-계약서-특약-보증인원-상담-말과-계약서-문장을-맞추는-확인법.mdx",
+      "research_path": "output/sinhonjigi/research/예식장-계약서-방어/예식장-계약서-특약-보증인원-상담-말과-계약서-문장을-맞추는-확인법.json"
+    },
+    {
+      "id": "a222",
+      "title": "최소인원 놓치지 않는 예식장 보증인원 조정 서류와 일정 정리",
+      "subtitle": "예식장 보증인원 조정를 최소인원, 하객변동, 식대총액, 잔금 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "예식장 보증인원 조정",
+      "expanded_keywords": [
+        "최소인원",
+        "하객변동",
+        "식대총액",
+        "잔금"
+      ],
+      "cluster": "예식장 계약서 방어",
+      "scheduled_at": "2026-07-12T11:00:00+09:00",
+      "unique_angle": "계약 전 열어둘 범위를 정하는 기준",
+      "structure_type": "체크리스트형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/예식장-계약서-방어/예식장-보증인원-조정-최소인원-계약-전-열어둘-범위를-정하는-기준.mdx",
+      "research_path": "output/sinhonjigi/research/예식장-계약서-방어/예식장-보증인원-조정-최소인원-계약-전-열어둘-범위를-정하는-기준.json"
+    },
+    {
+      "id": "a223",
+      "title": "예식장 추가비 항목 음향 기준과 체크리스트, 꽃장식 확인 순서",
+      "subtitle": "예식장 추가비 항목를 음향, 꽃장식, 폐백, 주차 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "예식장 추가비 항목",
+      "expanded_keywords": [
+        "음향",
+        "꽃장식",
+        "폐백",
+        "주차"
+      ],
+      "cluster": "예식장 계약서 방어",
+      "scheduled_at": "2026-07-12T16:00:00+09:00",
+      "unique_angle": "견적서 빈칸에서 나중에 생기는 비용 찾기",
+      "structure_type": "절차형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/예식장-계약서-방어/예식장-추가비-항목-음향-견적서-빈칸에서-나중에-생기는-비용-찾기.mdx",
+      "research_path": "output/sinhonjigi/research/예식장-계약서-방어/예식장-추가비-항목-음향-견적서-빈칸에서-나중에-생기는-비용-찾기.json"
+    },
+    {
+      "id": "a224",
+      "title": "예식 취소 위약금 계산 계약금 핵심 정리와 취소시점 주의점",
+      "subtitle": "예식 취소 위약금 계산를 계약금, 소비자분쟁, 취소시점, 증빙 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "예식 취소 위약금 계산",
+      "expanded_keywords": [
+        "계약금",
+        "소비자분쟁",
+        "취소시점",
+        "증빙"
+      ],
+      "cluster": "예식장 계약서 방어",
+      "scheduled_at": "2026-07-12T21:00:00+09:00",
+      "unique_angle": "감정이 아니라 기준표로 손해를 줄이는 법",
+      "structure_type": "문제해결형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/예식장-계약서-방어/예식-취소-위약금-계산-계약금-감정이-아니라-기준표로-손해를-줄이는-법.mdx",
+      "research_path": "output/sinhonjigi/research/예식장-계약서-방어/예식-취소-위약금-계산-계약금-감정이-아니라-기준표로-손해를-줄이는-법.json"
+    },
+    {
+      "id": "a225",
+      "title": "메뉴구성 기준으로 정리한 예식장 시식 체크 FAQ형 가이드",
+      "subtitle": "예식장 시식 체크를 메뉴구성, 음료, 서비스료, 하객동선 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "예식장 시식 체크",
+      "expanded_keywords": [
+        "메뉴구성",
+        "음료",
+        "서비스료",
+        "하객동선"
+      ],
+      "cluster": "예식장 계약서 방어",
+      "scheduled_at": "2026-07-13T02:00:00+09:00",
+      "unique_angle": "맛 후기보다 계약 조건을 먼저 보는 방법",
+      "structure_type": "FAQ형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/예식장-계약서-방어/예식장-시식-체크-메뉴구성-맛-후기보다-계약-조건을-먼저-보는-방법.mdx",
+      "research_path": "output/sinhonjigi/research/예식장-계약서-방어/예식장-시식-체크-메뉴구성-맛-후기보다-계약-조건을-먼저-보는-방법.json"
+    },
+    {
+      "id": "a226",
+      "title": "본식스냅 납품조건 준비 전 원본과 보정본 먼저 확인하기",
+      "subtitle": "본식스냅 납품조건를 원본, 보정본, 납기, 저작권 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "본식스냅 납품조건",
+      "expanded_keywords": [
+        "원본",
+        "보정본",
+        "납기",
+        "저작권"
+      ],
+      "cluster": "스냅 영상 계약 점검",
+      "scheduled_at": "2026-07-13T07:00:00+09:00",
+      "unique_angle": "사진 수보다 납품 범위를 먼저 보는 기준",
+      "structure_type": "사례형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/스냅-영상-계약-점검/본식스냅-납품조건-원본-사진-수보다-납품-범위를-먼저-보는-기준.mdx",
+      "research_path": "output/sinhonjigi/research/스냅-영상-계약-점검/본식스냅-납품조건-원본-사진-수보다-납품-범위를-먼저-보는-기준.json"
+    },
+    {
+      "id": "a227",
+      "title": "웨딩영상 계약 범위 촬영시간 실전 점검표와 하이라이트 준비법",
+      "subtitle": "웨딩영상 계약 범위를 촬영시간, 하이라이트, 원본영상, 수정횟수 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "웨딩영상 계약 범위",
+      "expanded_keywords": [
+        "촬영시간",
+        "하이라이트",
+        "원본영상",
+        "수정횟수"
+      ],
+      "cluster": "스냅 영상 계약 점검",
+      "scheduled_at": "2026-07-13T12:00:00+09:00",
+      "unique_angle": "영상 상품 설명서에서 빠지는 문장 확인법",
+      "structure_type": "의사결정형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/스냅-영상-계약-점검/웨딩영상-계약-범위-촬영시간-영상-상품-설명서에서-빠지는-문장-확인법.mdx",
+      "research_path": "output/sinhonjigi/research/스냅-영상-계약-점검/웨딩영상-계약-범위-촬영시간-영상-상품-설명서에서-빠지는-문장-확인법.json"
+    },
+    {
+      "id": "a228",
+      "title": "스냅 작가 교체 리스크 지정작가 한눈에 정리, 대체작가 실무 흐름",
+      "subtitle": "스냅 작가 교체 리스크를 지정작가, 대체작가, 환불조건, 계약주체 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "스냅 작가 교체 리스크",
+      "expanded_keywords": [
+        "지정작가",
+        "대체작가",
+        "환불조건",
+        "계약주체"
+      ],
+      "cluster": "스냅 영상 계약 점검",
+      "scheduled_at": "2026-07-13T17:00:00+09:00",
+      "unique_angle": "포트폴리오와 실제 촬영자를 맞추는 법",
+      "structure_type": "일정관리형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/스냅-영상-계약-점검/스냅-작가-교체-리스크-지정작가-포트폴리오와-실제-촬영자를-맞추는-법.mdx",
+      "research_path": "output/sinhonjigi/research/스냅-영상-계약-점검/스냅-작가-교체-리스크-지정작가-포트폴리오와-실제-촬영자를-맞추는-법.json"
+    },
+    {
+      "id": "a229",
+      "title": "보정범위와 수정기한으로 보는 본식 사진 수정 요청 전략",
+      "subtitle": "본식 사진 수정 요청를 보정범위, 수정기한, 추가금, 파일형식 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "본식 사진 수정 요청",
+      "expanded_keywords": [
+        "보정범위",
+        "수정기한",
+        "추가금",
+        "파일형식"
+      ],
+      "cluster": "스냅 영상 계약 점검",
+      "scheduled_at": "2026-07-13T22:00:00+09:00",
+      "unique_angle": "마음에 안 들 때 쓸 수 있는 요청 기준",
+      "structure_type": "실수예방형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/스냅-영상-계약-점검/본식-사진-수정-요청-보정범위-마음에-안-들-때-쓸-수-있는-요청-기준.mdx",
+      "research_path": "output/sinhonjigi/research/스냅-영상-계약-점검/본식-사진-수정-요청-보정범위-마음에-안-들-때-쓸-수-있는-요청-기준.json"
+    },
+    {
+      "id": "a230",
+      "title": "웨딩 앨범 추가금 페이지수 비용 판단 기준, 액자 주의점",
+      "subtitle": "웨딩 앨범 추가금를 페이지수, 인화, 액자, 배송비 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "웨딩 앨범 추가금",
+      "expanded_keywords": [
+        "페이지수",
+        "인화",
+        "액자",
+        "배송비"
+      ],
+      "cluster": "스냅 영상 계약 점검",
+      "scheduled_at": "2026-07-14T03:00:00+09:00",
+      "unique_angle": "처음 견적과 최종 결제 차이를 줄이는 법",
+      "structure_type": "문서점검형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/스냅-영상-계약-점검/웨딩-앨범-추가금-페이지수-처음-견적과-최종-결제-차이를-줄이는-법.mdx",
+      "research_path": "output/sinhonjigi/research/스냅-영상-계약-점검/웨딩-앨범-추가금-페이지수-처음-견적과-최종-결제-차이를-줄이는-법.json"
+    },
+    {
+      "id": "a231",
+      "title": "가전 배송일정 조율 입주일 최종 점검포인트, 설치기사와 재고확인",
+      "subtitle": "가전 배송일정 조율를 입주일, 설치기사, 사다리차, 재고확인 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "가전 배송일정 조율",
+      "expanded_keywords": [
+        "입주일",
+        "설치기사",
+        "사다리차",
+        "재고확인"
+      ],
+      "cluster": "혼수 배송 일정관리",
+      "scheduled_at": "2026-07-14T08:00:00+09:00",
+      "unique_angle": "한꺼번에 몰리는 배송을 나누는 순서",
+      "structure_type": "비교형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/혼수-배송-일정관리/가전-배송일정-조율-입주일-한꺼번에-몰리는-배송을-나누는-순서.mdx",
+      "research_path": "output/sinhonjigi/research/혼수-배송-일정관리/가전-배송일정-조율-입주일-한꺼번에-몰리는-배송을-나누는-순서.json"
+    },
+    {
+      "id": "a232",
+      "title": "혼수 가구 사이즈 실측 실수 방지 가이드, 엘리베이터부터 문폭까지",
+      "subtitle": "혼수 가구 사이즈 실측를 엘리베이터, 문폭, 동선, 반품비 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "혼수 가구 사이즈 실측",
+      "expanded_keywords": [
+        "엘리베이터",
+        "문폭",
+        "동선",
+        "반품비"
+      ],
+      "cluster": "혼수 배송 일정관리",
+      "scheduled_at": "2026-07-14T13:00:00+09:00",
+      "unique_angle": "예쁜 가구보다 먼저 재야 할 치수",
+      "structure_type": "체크리스트형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/혼수-배송-일정관리/혼수-가구-사이즈-실측-엘리베이터-예쁜-가구보다-먼저-재야-할-치수.mdx",
+      "research_path": "output/sinhonjigi/research/혼수-배송-일정관리/혼수-가구-사이즈-실측-엘리베이터-예쁜-가구보다-먼저-재야-할-치수.json"
+    },
+    {
+      "id": "a233",
+      "title": "출시연도 신청 전 확인법: 가전 모델명 비교 실전 가이드",
+      "subtitle": "가전 모델명 비교를 출시연도, 에너지효율, 행사모델, 설치조건 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "가전 모델명 비교",
+      "expanded_keywords": [
+        "출시연도",
+        "에너지효율",
+        "행사모델",
+        "설치조건"
+      ],
+      "cluster": "혼수 배송 일정관리",
+      "scheduled_at": "2026-07-14T18:00:00+09:00",
+      "unique_angle": "할인율보다 모델명을 먼저 확인하는 법",
+      "structure_type": "절차형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/혼수-배송-일정관리/가전-모델명-비교-출시연도-할인율보다-모델명을-먼저-확인하는-법.mdx",
+      "research_path": "output/sinhonjigi/research/혼수-배송-일정관리/가전-모델명-비교-출시연도-할인율보다-모델명을-먼저-확인하는-법.json"
+    },
+    {
+      "id": "a234",
+      "title": "혼수 계약 취소 조건 청약철회 절차 한눈에 정리, 맞춤제작 확인 순서",
+      "subtitle": "혼수 계약 취소 조건를 청약철회, 맞춤제작, 배송전취소, 위약금 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "혼수 계약 취소 조건",
+      "expanded_keywords": [
+        "청약철회",
+        "맞춤제작",
+        "배송전취소",
+        "위약금"
+      ],
+      "cluster": "혼수 배송 일정관리",
+      "scheduled_at": "2026-07-14T23:00:00+09:00",
+      "unique_angle": "매장에서 들은 설명을 문서로 남기는 기준",
+      "structure_type": "문제해결형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/혼수-배송-일정관리/혼수-계약-취소-조건-청약철회-매장에서-들은-설명을-문서로-남기는-기준.mdx",
+      "research_path": "output/sinhonjigi/research/혼수-배송-일정관리/혼수-계약-취소-조건-청약철회-매장에서-들은-설명을-문서로-남기는-기준.json"
+    },
+    {
+      "id": "a235",
+      "title": "입주 청소와 가전 설치 청소일 지원 기준, 설치일 최종 점검포인트",
+      "subtitle": "입주 청소와 가전 설치를 청소일, 설치일, 하자확인, 관리실 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "입주 청소와 가전 설치",
+      "expanded_keywords": [
+        "청소일",
+        "설치일",
+        "하자확인",
+        "관리실"
+      ],
+      "cluster": "혼수 배송 일정관리",
+      "scheduled_at": "2026-07-15T04:00:00+09:00",
+      "unique_angle": "순서가 바뀌면 생기는 재방문 비용 줄이기",
+      "structure_type": "FAQ형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/혼수-배송-일정관리/입주-청소와-가전-설치-청소일-순서가-바뀌면-생기는-재방문-비용-줄이기.mdx",
+      "research_path": "output/sinhonjigi/research/혼수-배송-일정관리/입주-청소와-가전-설치-청소일-순서가-바뀌면-생기는-재방문-비용-줄이기.json"
+    },
+    {
+      "id": "a236",
+      "title": "상견례 장소 선택 교통 현실 가이드, 룸예약 기준과 체크리스트",
+      "subtitle": "상견례 장소 선택를 교통, 룸예약, 코스가격, 소음 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "상견례 장소 선택",
+      "expanded_keywords": [
+        "교통",
+        "룸예약",
+        "코스가격",
+        "소음"
+      ],
+      "cluster": "상견례 비용과 역할",
+      "scheduled_at": "2026-07-15T09:00:00+09:00",
+      "unique_angle": "가족 만족보다 갈등 가능성을 줄이는 기준",
+      "structure_type": "사례형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/상견례-비용과-역할/상견례-장소-선택-교통-가족-만족보다-갈등-가능성을-줄이는-기준.mdx",
+      "research_path": "output/sinhonjigi/research/상견례-비용과-역할/상견례-장소-선택-교통-가족-만족보다-갈등-가능성을-줄이는-기준.json"
+    },
+    {
+      "id": "a237",
+      "title": "예약금 확인 순서로 보는 상견례 비용 분담 서류와 일정 정리",
+      "subtitle": "상견례 비용 분담를 예약금, 식사비, 선물, 이동비 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "상견례 비용 분담",
+      "expanded_keywords": [
+        "예약금",
+        "식사비",
+        "선물",
+        "이동비"
+      ],
+      "cluster": "상견례 비용과 역할",
+      "scheduled_at": "2026-07-15T14:00:00+09:00",
+      "unique_angle": "누가 낼지 애매한 지출을 미리 나누는 법",
+      "structure_type": "의사결정형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/상견례-비용과-역할/상견례-비용-분담-예약금-누가-낼지-애매한-지출을-미리-나누는-법.mdx",
+      "research_path": "output/sinhonjigi/research/상견례-비용과-역할/상견례-비용-분담-예약금-누가-낼지-애매한-지출을-미리-나누는-법.json"
+    },
+    {
+      "id": "a238",
+      "title": "상견례 대화 주제 결혼일정 전략, 예산과 혼수 판단 기준",
+      "subtitle": "상견례 대화 주제를 결혼일정, 예산, 혼수, 가족행사 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "상견례 대화 주제",
+      "expanded_keywords": [
+        "결혼일정",
+        "예산",
+        "혼수",
+        "가족행사"
+      ],
+      "cluster": "상견례 비용과 역할",
+      "scheduled_at": "2026-07-15T19:00:00+09:00",
+      "unique_angle": "처음 만남에서 피해야 할 질문과 남길 질문",
+      "structure_type": "일정관리형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/상견례-비용과-역할/상견례-대화-주제-결혼일정-처음-만남에서-피해야-할-질문과-남길-질문.mdx",
+      "research_path": "output/sinhonjigi/research/상견례-비용과-역할/상견례-대화-주제-결혼일정-처음-만남에서-피해야-할-질문과-남길-질문.json"
+    },
+    {
+      "id": "a239",
+      "title": "상견례 선물 준비 가격대 준비 전 보관 최종 점검포인트",
+      "subtitle": "상견례 선물 준비를 가격대, 보관, 취향, 전달타이밍 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "상견례 선물 준비",
+      "expanded_keywords": [
+        "가격대",
+        "보관",
+        "취향",
+        "전달타이밍"
+      ],
+      "cluster": "상견례 비용과 역할",
+      "scheduled_at": "2026-07-16T00:00:00+09:00",
+      "unique_angle": "부담스럽지 않게 준비하는 판단 기준",
+      "structure_type": "실수예방형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/상견례-비용과-역할/상견례-선물-준비-가격대-부담스럽지-않게-준비하는-판단-기준.mdx",
+      "research_path": "output/sinhonjigi/research/상견례-비용과-역할/상견례-선물-준비-가격대-부담스럽지-않게-준비하는-판단-기준.json"
+    },
+    {
+      "id": "a240",
+      "title": "상견례 후 일정 정리 예식장 기준과 체크리스트",
+      "subtitle": "상견례 후 일정 정리를 예식장, 스드메, 혼인신고, 집계약 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "상견례 후 일정 정리",
+      "expanded_keywords": [
+        "예식장",
+        "스드메",
+        "혼인신고",
+        "집계약"
+      ],
+      "cluster": "상견례 비용과 역할",
+      "scheduled_at": "2026-07-16T05:00:00+09:00",
+      "unique_angle": "말로 끝난 합의를 실행 목록으로 바꾸는 법",
+      "structure_type": "문서점검형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/상견례-비용과-역할/상견례-후-일정-정리-예식장-말로-끝난-합의를-실행-목록으로-바꾸는-법.mdx",
+      "research_path": "output/sinhonjigi/research/상견례-비용과-역할/상견례-후-일정-정리-예식장-말로-끝난-합의를-실행-목록으로-바꾸는-법.json"
+    },
+    {
+      "id": "a241",
+      "title": "신혼집 입주 하자 체크, 사진기록부터 관리사무소까지 신청 전 확인법",
+      "subtitle": "신혼집 입주 하자 체크를 사진기록, 관리사무소, 보수기한, 계약서 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼집 입주 하자 체크",
+      "expanded_keywords": [
+        "사진기록",
+        "관리사무소",
+        "보수기한",
+        "계약서"
+      ],
+      "cluster": "신혼집 하자 점검",
+      "scheduled_at": "2026-07-16T10:00:00+09:00",
+      "unique_angle": "입주 첫날 놓치기 쉬운 증거 남기는 법",
+      "structure_type": "비교형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼집-하자-점검/신혼집-입주-하자-체크-사진기록-입주-첫날-놓치기-쉬운-증거-남기는-법.mdx",
+      "research_path": "output/sinhonjigi/research/신혼집-하자-점검/신혼집-입주-하자-체크-사진기록-입주-첫날-놓치기-쉬운-증거-남기는-법.json"
+    },
+    {
+      "id": "a242",
+      "title": "천장으로 보는 누수 곰팡이 확인 실수 줄이는 준비 순서",
+      "subtitle": "누수 곰팡이 확인를 천장, 창틀, 욕실, 환기 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "누수 곰팡이 확인",
+      "expanded_keywords": [
+        "천장",
+        "창틀",
+        "욕실",
+        "환기"
+      ],
+      "cluster": "신혼집 하자 점검",
+      "scheduled_at": "2026-07-16T15:00:00+09:00",
+      "unique_angle": "냄새보다 흔적을 먼저 보는 현장 점검 기준",
+      "structure_type": "체크리스트형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼집-하자-점검/누수-곰팡이-확인-천장-냄새보다-흔적을-먼저-보는-현장-점검-기준.mdx",
+      "research_path": "output/sinhonjigi/research/신혼집-하자-점검/누수-곰팡이-확인-천장-냄새보다-흔적을-먼저-보는-현장-점검-기준.json"
+    },
+    {
+      "id": "a243",
+      "title": "보일러 에어컨 점검 작동확인 FAQ와 수리이력 확인법",
+      "subtitle": "보일러 에어컨 점검를 작동확인, 수리이력, 리모컨, 필터 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "보일러 에어컨 점검",
+      "expanded_keywords": [
+        "작동확인",
+        "수리이력",
+        "리모컨",
+        "필터"
+      ],
+      "cluster": "신혼집 하자 점검",
+      "scheduled_at": "2026-07-16T20:00:00+09:00",
+      "unique_angle": "계절이 바뀐 뒤 발견되는 비용을 줄이는 법",
+      "structure_type": "절차형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼집-하자-점검/보일러-에어컨-점검-작동확인-계절이-바뀐-뒤-발견되는-비용을-줄이는-법.mdx",
+      "research_path": "output/sinhonjigi/research/신혼집-하자-점검/보일러-에어컨-점검-작동확인-계절이-바뀐-뒤-발견되는-비용을-줄이는-법.json"
+    },
+    {
+      "id": "a244",
+      "title": "층간소음 사전 확인 비교 가이드, 방문시간과 관리규약 판단 기준",
+      "subtitle": "층간소음 사전 확인를 방문시간, 관리규약, 구조, 이웃문의 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "층간소음 사전 확인",
+      "expanded_keywords": [
+        "방문시간",
+        "관리규약",
+        "구조",
+        "이웃문의"
+      ],
+      "cluster": "신혼집 하자 점검",
+      "scheduled_at": "2026-07-17T01:00:00+09:00",
+      "unique_angle": "계약 전 들을 수 있는 신호와 없는 신호 구분",
+      "structure_type": "문제해결형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼집-하자-점검/층간소음-사전-확인-방문시간-계약-전-들을-수-있는-신호와-없는-신호-구분.mdx",
+      "research_path": "output/sinhonjigi/research/신혼집-하자-점검/층간소음-사전-확인-방문시간-계약-전-들을-수-있는-신호와-없는-신호-구분.json"
+    },
+    {
+      "id": "a245",
+      "title": "입주 전 사진 기록 벽지 상황별 판단 가이드",
+      "subtitle": "입주 전 사진 기록를 벽지, 마루, 가전, 수전 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "입주 전 사진 기록",
+      "expanded_keywords": [
+        "벽지",
+        "마루",
+        "가전",
+        "수전"
+      ],
+      "cluster": "신혼집 하자 점검",
+      "scheduled_at": "2026-07-17T06:00:00+09:00",
+      "unique_angle": "퇴거 때 보증금을 지키는 촬영 순서",
+      "structure_type": "FAQ형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼집-하자-점검/입주-전-사진-기록-벽지-퇴거-때-보증금을-지키는-촬영-순서.mdx",
+      "research_path": "output/sinhonjigi/research/신혼집-하자-점검/입주-전-사진-기록-벽지-퇴거-때-보증금을-지키는-촬영-순서.json"
+    },
+    {
+      "id": "a246",
+      "title": "퇴근시간 놓치지 않는 맞벌이 저녁 루틴 서류와 일정 정리",
+      "subtitle": "맞벌이 저녁 루틴를 퇴근시간, 식사준비, 청소, 휴식 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "맞벌이 저녁 루틴",
+      "expanded_keywords": [
+        "퇴근시간",
+        "식사준비",
+        "청소",
+        "휴식"
+      ],
+      "cluster": "맞벌이 시간관리",
+      "scheduled_at": "2026-07-17T11:00:00+09:00",
+      "unique_angle": "피곤한 날에도 유지되는 최소 규칙 만들기",
+      "structure_type": "사례형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/맞벌이-시간관리/맞벌이-저녁-루틴-퇴근시간-피곤한-날에도-유지되는-최소-규칙-만들기.mdx",
+      "research_path": "output/sinhonjigi/research/맞벌이-시간관리/맞벌이-저녁-루틴-퇴근시간-피곤한-날에도-유지되는-최소-규칙-만들기.json"
+    },
+    {
+      "id": "a247",
+      "title": "부부 주말 일정표 가족방문 기준과 체크리스트, 장보기 확인 순서",
+      "subtitle": "부부 주말 일정표를 가족방문, 장보기, 운동, 데이트 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "부부 주말 일정표",
+      "expanded_keywords": [
+        "가족방문",
+        "장보기",
+        "운동",
+        "데이트"
+      ],
+      "cluster": "맞벌이 시간관리",
+      "scheduled_at": "2026-07-17T16:00:00+09:00",
+      "unique_angle": "쉬는 날이 집안일로만 끝나지 않게 나누는 법",
+      "structure_type": "의사결정형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/맞벌이-시간관리/부부-주말-일정표-가족방문-쉬는-날이-집안일로만-끝나지-않게-나누는-법.mdx",
+      "research_path": "output/sinhonjigi/research/맞벌이-시간관리/부부-주말-일정표-가족방문-쉬는-날이-집안일로만-끝나지-않게-나누는-법.json"
+    },
+    {
+      "id": "a248",
+      "title": "집안일 자동화 기준 로봇청소기 핵심 정리와 분담앱 주의점",
+      "subtitle": "집안일 자동화 기준를 로봇청소기, 정기배송, 분담앱, 가사서비스 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "집안일 자동화 기준",
+      "expanded_keywords": [
+        "로봇청소기",
+        "정기배송",
+        "분담앱",
+        "가사서비스"
+      ],
+      "cluster": "맞벌이 시간관리",
+      "scheduled_at": "2026-07-17T21:00:00+09:00",
+      "unique_angle": "돈을 써도 되는 일과 직접 해야 하는 일 구분",
+      "structure_type": "일정관리형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/맞벌이-시간관리/집안일-자동화-기준-로봇청소기-돈을-써도-되는-일과-직접-해야-하는-일-구분.mdx",
+      "research_path": "output/sinhonjigi/research/맞벌이-시간관리/집안일-자동화-기준-로봇청소기-돈을-써도-되는-일과-직접-해야-하는-일-구분.json"
+    },
+    {
+      "id": "a249",
+      "title": "대중교통 기준으로 정리한 맞벌이 출근 동선 실수예방형 가이드",
+      "subtitle": "맞벌이 출근 동선를 대중교통, 주차, 환승, 야근 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "맞벌이 출근 동선",
+      "expanded_keywords": [
+        "대중교통",
+        "주차",
+        "환승",
+        "야근"
+      ],
+      "cluster": "맞벌이 시간관리",
+      "scheduled_at": "2026-07-18T02:00:00+09:00",
+      "unique_angle": "지도 거리보다 실제 피로도를 보는 기준",
+      "structure_type": "실수예방형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/맞벌이-시간관리/맞벌이-출근-동선-대중교통-지도-거리보다-실제-피로도를-보는-기준.mdx",
+      "research_path": "output/sinhonjigi/research/맞벌이-시간관리/맞벌이-출근-동선-대중교통-지도-거리보다-실제-피로도를-보는-기준.json"
+    },
+    {
+      "id": "a250",
+      "title": "부부 회의 시간 준비 전 30분과 안건 먼저 확인하기",
+      "subtitle": "부부 회의 시간를 30분, 안건, 기록, 다음행동 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "부부 회의 시간",
+      "expanded_keywords": [
+        "30분",
+        "안건",
+        "기록",
+        "다음행동"
+      ],
+      "cluster": "맞벌이 시간관리",
+      "scheduled_at": "2026-07-18T07:00:00+09:00",
+      "unique_angle": "싸움이 아니라 운영회의로 끝내는 순서",
+      "structure_type": "문서점검형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/맞벌이-시간관리/부부-회의-시간-30분-싸움이-아니라-운영회의로-끝내는-순서.mdx",
+      "research_path": "output/sinhonjigi/research/맞벌이-시간관리/부부-회의-시간-30분-싸움이-아니라-운영회의로-끝내는-순서.json"
+    },
+    {
+      "id": "a251",
+      "title": "부부 건강검진 계획 검진주기 실전 점검표와 가족력 준비법",
+      "subtitle": "부부 건강검진 계획를 검진주기, 가족력, 비용, 예약 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "부부 건강검진 계획",
+      "expanded_keywords": [
+        "검진주기",
+        "가족력",
+        "비용",
+        "예약"
+      ],
+      "cluster": "신혼 건강 루틴",
+      "scheduled_at": "2026-07-18T12:00:00+09:00",
+      "unique_angle": "미루기 쉬운 검진을 달력에 넣는 방법",
+      "structure_type": "비교형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-건강-루틴/부부-건강검진-계획-검진주기-미루기-쉬운-검진을-달력에-넣는-방법.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-건강-루틴/부부-건강검진-계획-검진주기-미루기-쉬운-검진을-달력에-넣는-방법.json"
+    },
+    {
+      "id": "a252",
+      "title": "신혼 수면환경 점검 매트리스 한눈에 정리, 조명 실무 흐름",
+      "subtitle": "신혼 수면환경 점검를 매트리스, 조명, 소음, 실내온도 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼 수면환경 점검",
+      "expanded_keywords": [
+        "매트리스",
+        "조명",
+        "소음",
+        "실내온도"
+      ],
+      "cluster": "신혼 건강 루틴",
+      "scheduled_at": "2026-07-18T17:00:00+09:00",
+      "unique_angle": "수면 습관이 다른 부부의 타협 기준",
+      "structure_type": "체크리스트형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-건강-루틴/신혼-수면환경-점검-매트리스-수면-습관이-다른-부부의-타협-기준.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-건강-루틴/신혼-수면환경-점검-매트리스-수면-습관이-다른-부부의-타협-기준.json"
+    },
+    {
+      "id": "a253",
+      "title": "장보기와 밀프렙으로 보는 신혼 식비와 건강식 전략",
+      "subtitle": "신혼 식비와 건강식를 장보기, 밀프렙, 외식, 간식 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼 식비와 건강식",
+      "expanded_keywords": [
+        "장보기",
+        "밀프렙",
+        "외식",
+        "간식"
+      ],
+      "cluster": "신혼 건강 루틴",
+      "scheduled_at": "2026-07-18T22:00:00+09:00",
+      "unique_angle": "아끼기와 건강을 같이 맞추는 식단 운영법",
+      "structure_type": "절차형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-건강-루틴/신혼-식비와-건강식-장보기-아끼기와-건강을-같이-맞추는-식단-운영법.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-건강-루틴/신혼-식비와-건강식-장보기-아끼기와-건강을-같이-맞추는-식단-운영법.json"
+    },
+    {
+      "id": "a254",
+      "title": "부부 운동 루틴 시간대 비용 판단 기준, 목표 주의점",
+      "subtitle": "부부 운동 루틴를 시간대, 비용, 목표, 동기부여 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "부부 운동 루틴",
+      "expanded_keywords": [
+        "시간대",
+        "비용",
+        "목표",
+        "동기부여"
+      ],
+      "cluster": "신혼 건강 루틴",
+      "scheduled_at": "2026-07-19T03:00:00+09:00",
+      "unique_angle": "같이 할 운동과 따로 할 운동을 나누는 기준",
+      "structure_type": "문제해결형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-건강-루틴/부부-운동-루틴-시간대-같이-할-운동과-따로-할-운동을-나누는-기준.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-건강-루틴/부부-운동-루틴-시간대-같이-할-운동과-따로-할-운동을-나누는-기준.json"
+    },
+    {
+      "id": "a255",
+      "title": "신혼 스트레스 관리 대화 최종 점검포인트, 휴식과 업무피로",
+      "subtitle": "신혼 스트레스 관리를 대화, 휴식, 가족경계, 업무피로 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼 스트레스 관리",
+      "expanded_keywords": [
+        "대화",
+        "휴식",
+        "가족경계",
+        "업무피로"
+      ],
+      "cluster": "신혼 건강 루틴",
+      "scheduled_at": "2026-07-19T08:00:00+09:00",
+      "unique_angle": "문제가 커지기 전에 신호를 기록하는 법",
+      "structure_type": "FAQ형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-건강-루틴/신혼-스트레스-관리-대화-문제가-커지기-전에-신호를-기록하는-법.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-건강-루틴/신혼-스트레스-관리-대화-문제가-커지기-전에-신호를-기록하는-법.json"
+    },
+    {
+      "id": "a256",
+      "title": "반려동물 신혼집 계약 실수 방지 가이드, 반려동물특약부터 소음까지",
+      "subtitle": "반려동물 신혼집 계약를 반려동물특약, 소음, 원상복구, 관리규약 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "반려동물 신혼집 계약",
+      "expanded_keywords": [
+        "반려동물특약",
+        "소음",
+        "원상복구",
+        "관리규약"
+      ],
+      "cluster": "반려동물 신혼 생활",
+      "scheduled_at": "2026-07-19T13:00:00+09:00",
+      "unique_angle": "입주 전 허용 범위를 문서로 확인하는 법",
+      "structure_type": "사례형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/반려동물-신혼-생활/반려동물-신혼집-계약-반려동물특약-입주-전-허용-범위를-문서로-확인하는-법.mdx",
+      "research_path": "output/sinhonjigi/research/반려동물-신혼-생활/반려동물-신혼집-계약-반려동물특약-입주-전-허용-범위를-문서로-확인하는-법.json"
+    },
+    {
+      "id": "a257",
+      "title": "사료 신청 전 확인법: 부부 반려동물 비용 실전 가이드",
+      "subtitle": "부부 반려동물 비용를 사료, 병원비, 보험, 미용 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "부부 반려동물 비용",
+      "expanded_keywords": [
+        "사료",
+        "병원비",
+        "보험",
+        "미용"
+      ],
+      "cluster": "반려동물 신혼 생활",
+      "scheduled_at": "2026-07-19T18:00:00+09:00",
+      "unique_angle": "월 생활비에 빠지기 쉬운 지출 계산법",
+      "structure_type": "의사결정형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/반려동물-신혼-생활/부부-반려동물-비용-사료-월-생활비에-빠지기-쉬운-지출-계산법.mdx",
+      "research_path": "output/sinhonjigi/research/반려동물-신혼-생활/부부-반려동물-비용-사료-월-생활비에-빠지기-쉬운-지출-계산법.json"
+    },
+    {
+      "id": "a258",
+      "title": "반려동물 돌봄 분담 산책 절차 한눈에 정리, 배식 확인 순서",
+      "subtitle": "반려동물 돌봄 분담를 산책, 배식, 병원, 여행 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "반려동물 돌봄 분담",
+      "expanded_keywords": [
+        "산책",
+        "배식",
+        "병원",
+        "여행"
+      ],
+      "cluster": "반려동물 신혼 생활",
+      "scheduled_at": "2026-07-19T23:00:00+09:00",
+      "unique_angle": "한 사람에게 몰리지 않는 역할표 만들기",
+      "structure_type": "일정관리형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/반려동물-신혼-생활/반려동물-돌봄-분담-산책-한-사람에게-몰리지-않는-역할표-만들기.mdx",
+      "research_path": "output/sinhonjigi/research/반려동물-신혼-생활/반려동물-돌봄-분담-산책-한-사람에게-몰리지-않는-역할표-만들기.json"
+    },
+    {
+      "id": "a259",
+      "title": "신혼 여행 반려동물 맡기기 호텔링 지원 기준, 펫시터 최종 점검포인트",
+      "subtitle": "신혼 여행 반려동물 맡기기를 호텔링, 펫시터, 가족돌봄, 응급연락 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼 여행 반려동물 맡기기",
+      "expanded_keywords": [
+        "호텔링",
+        "펫시터",
+        "가족돌봄",
+        "응급연락"
+      ],
+      "cluster": "반려동물 신혼 생활",
+      "scheduled_at": "2026-07-20T04:00:00+09:00",
+      "unique_angle": "출발 전 확인할 위탁 기준",
+      "structure_type": "실수예방형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/반려동물-신혼-생활/신혼-여행-반려동물-맡기기-호텔링-출발-전-확인할-위탁-기준.mdx",
+      "research_path": "output/sinhonjigi/research/반려동물-신혼-생활/신혼-여행-반려동물-맡기기-호텔링-출발-전-확인할-위탁-기준.json"
+    },
+    {
+      "id": "a260",
+      "title": "반려동물 이웃 민원 예방 짖음 현실 가이드, 냄새 기준과 체크리스트",
+      "subtitle": "반려동물 이웃 민원 예방를 짖음, 냄새, 공용공간, 엘리베이터 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "반려동물 이웃 민원 예방",
+      "expanded_keywords": [
+        "짖음",
+        "냄새",
+        "공용공간",
+        "엘리베이터"
+      ],
+      "cluster": "반려동물 신혼 생활",
+      "scheduled_at": "2026-07-20T09:00:00+09:00",
+      "unique_angle": "분쟁 전에 관리할 생활 규칙",
+      "structure_type": "문서점검형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/반려동물-신혼-생활/반려동물-이웃-민원-예방-짖음-분쟁-전에-관리할-생활-규칙.mdx",
+      "research_path": "output/sinhonjigi/research/반려동물-신혼-생활/반려동물-이웃-민원-예방-짖음-분쟁-전에-관리할-생활-규칙.json"
+    },
+    {
+      "id": "a261",
+      "title": "무주택기간 확인 순서로 보는 신혼 청약 가점 기록 서류와 일정 정리",
+      "subtitle": "신혼 청약 가점 기록를 무주택기간, 부양가족, 청약통장, 소득 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼 청약 가점 기록",
+      "expanded_keywords": [
+        "무주택기간",
+        "부양가족",
+        "청약통장",
+        "소득"
+      ],
+      "cluster": "청약 점수 실전관리",
+      "scheduled_at": "2026-07-20T14:00:00+09:00",
+      "unique_angle": "계산보다 증빙을 먼저 맞추는 순서",
+      "structure_type": "비교형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/청약-점수-실전관리/신혼-청약-가점-기록-무주택기간-계산보다-증빙을-먼저-맞추는-순서.mdx",
+      "research_path": "output/sinhonjigi/research/청약-점수-실전관리/신혼-청약-가점-기록-무주택기간-계산보다-증빙을-먼저-맞추는-순서.json"
+    },
+    {
+      "id": "a262",
+      "title": "청약통장 납입 회차 납입금 전략, 인정회차와 미납 판단 기준",
+      "subtitle": "청약통장 납입 회차를 납입금, 인정회차, 미납, 자동이체 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "청약통장 납입 회차",
+      "expanded_keywords": [
+        "납입금",
+        "인정회차",
+        "미납",
+        "자동이체"
+      ],
+      "cluster": "청약 점수 실전관리",
+      "scheduled_at": "2026-07-20T19:00:00+09:00",
+      "unique_angle": "오래 넣었는데 인정이 안 되는 경우 점검법",
+      "structure_type": "체크리스트형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/청약-점수-실전관리/청약통장-납입-회차-납입금-오래-넣었는데-인정이-안-되는-경우-점검법.mdx",
+      "research_path": "output/sinhonjigi/research/청약-점수-실전관리/청약통장-납입-회차-납입금-오래-넣었는데-인정이-안-되는-경우-점검법.json"
+    },
+    {
+      "id": "a263",
+      "title": "예비신혼부부 청약 증빙 혼인예정 준비 전 입주전혼인 최종 점검포인트",
+      "subtitle": "예비신혼부부 청약 증빙를 혼인예정, 입주전혼인, 가족관계, 서약서 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "예비신혼부부 청약 증빙",
+      "expanded_keywords": [
+        "혼인예정",
+        "입주전혼인",
+        "가족관계",
+        "서약서"
+      ],
+      "cluster": "청약 점수 실전관리",
+      "scheduled_at": "2026-07-21T00:00:00+09:00",
+      "unique_angle": "당첨 후 리스크를 줄이는 서류 준비",
+      "structure_type": "절차형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/청약-점수-실전관리/예비신혼부부-청약-증빙-혼인예정-당첨-후-리스크를-줄이는-서류-준비.mdx",
+      "research_path": "output/sinhonjigi/research/청약-점수-실전관리/예비신혼부부-청약-증빙-혼인예정-당첨-후-리스크를-줄이는-서류-준비.json"
+    },
+    {
+      "id": "a264",
+      "title": "청약 부적격 소명 주택소유 기준과 체크리스트",
+      "subtitle": "청약 부적격 소명를 주택소유, 세대원, 소득초과, 소명기한 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "청약 부적격 소명",
+      "expanded_keywords": [
+        "주택소유",
+        "세대원",
+        "소득초과",
+        "소명기한"
+      ],
+      "cluster": "청약 점수 실전관리",
+      "scheduled_at": "2026-07-21T05:00:00+09:00",
+      "unique_angle": "당황하지 않고 확인할 순서",
+      "structure_type": "문제해결형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/청약-점수-실전관리/청약-부적격-소명-주택소유-당황하지-않고-확인할-순서.mdx",
+      "research_path": "output/sinhonjigi/research/청약-점수-실전관리/청약-부적격-소명-주택소유-당황하지-않고-확인할-순서.json"
+    },
+    {
+      "id": "a265",
+      "title": "공공분양 소득 기준, 맞벌이부터 월평균소득까지 신청 전 확인법",
+      "subtitle": "공공분양 소득 기준를 맞벌이, 월평균소득, 건강보험, 원천징수 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "공공분양 소득 기준",
+      "expanded_keywords": [
+        "맞벌이",
+        "월평균소득",
+        "건강보험",
+        "원천징수"
+      ],
+      "cluster": "청약 점수 실전관리",
+      "scheduled_at": "2026-07-21T10:00:00+09:00",
+      "unique_angle": "연봉이 아니라 기준표로 보는 방법",
+      "structure_type": "FAQ형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/청약-점수-실전관리/공공분양-소득-기준-맞벌이-연봉이-아니라-기준표로-보는-방법.mdx",
+      "research_path": "output/sinhonjigi/research/청약-점수-실전관리/공공분양-소득-기준-맞벌이-연봉이-아니라-기준표로-보는-방법.json"
+    },
+    {
+      "id": "a266",
+      "title": "한도로 보는 신혼 전세대출 상담 질문 실수 줄이는 준비 순서",
+      "subtitle": "신혼 전세대출 상담 질문를 한도, 금리, 보증료, 상환방식 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼 전세대출 상담 질문",
+      "expanded_keywords": [
+        "한도",
+        "금리",
+        "보증료",
+        "상환방식"
+      ],
+      "cluster": "대출 상담 준비",
+      "scheduled_at": "2026-07-21T15:00:00+09:00",
+      "unique_angle": "은행 방문 전에 적어갈 질문 목록",
+      "structure_type": "사례형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/대출-상담-준비/신혼-전세대출-상담-질문-한도-은행-방문-전에-적어갈-질문-목록.mdx",
+      "research_path": "output/sinhonjigi/research/대출-상담-준비/신혼-전세대출-상담-질문-한도-은행-방문-전에-적어갈-질문-목록.json"
+    },
+    {
+      "id": "a267",
+      "title": "대출 실행일 잔금일 조율 심사기간 FAQ와 계약금 확인법",
+      "subtitle": "대출 실행일 잔금일 조율를 심사기간, 계약금, 잔금, 전입 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "대출 실행일 잔금일 조율",
+      "expanded_keywords": [
+        "심사기간",
+        "계약금",
+        "잔금",
+        "전입"
+      ],
+      "cluster": "대출 상담 준비",
+      "scheduled_at": "2026-07-21T20:00:00+09:00",
+      "unique_angle": "하루 차이로 막히는 일정을 피하는 법",
+      "structure_type": "의사결정형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/대출-상담-준비/대출-실행일-잔금일-조율-심사기간-하루-차이로-막히는-일정을-피하는-법.mdx",
+      "research_path": "output/sinhonjigi/research/대출-상담-준비/대출-실행일-잔금일-조율-심사기간-하루-차이로-막히는-일정을-피하는-법.json"
+    },
+    {
+      "id": "a268",
+      "title": "부부 소득 합산 대출 비교 가이드, 원천징수와 재직증명 판단 기준",
+      "subtitle": "부부 소득 합산 대출를 원천징수, 재직증명, 휴직, 프리랜서 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "부부 소득 합산 대출",
+      "expanded_keywords": [
+        "원천징수",
+        "재직증명",
+        "휴직",
+        "프리랜서"
+      ],
+      "cluster": "대출 상담 준비",
+      "scheduled_at": "2026-07-22T01:00:00+09:00",
+      "unique_angle": "소득자료가 다를 때 준비할 서류",
+      "structure_type": "일정관리형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/대출-상담-준비/부부-소득-합산-대출-원천징수-소득자료가-다를-때-준비할-서류.mdx",
+      "research_path": "output/sinhonjigi/research/대출-상담-준비/부부-소득-합산-대출-원천징수-소득자료가-다를-때-준비할-서류.json"
+    },
+    {
+      "id": "a269",
+      "title": "대출 갈아타기 판단 중도상환수수료 상황별 판단 가이드",
+      "subtitle": "대출 갈아타기 판단를 중도상환수수료, 금리차, 보증료, 남은기간 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "대출 갈아타기 판단",
+      "expanded_keywords": [
+        "중도상환수수료",
+        "금리차",
+        "보증료",
+        "남은기간"
+      ],
+      "cluster": "대출 상담 준비",
+      "scheduled_at": "2026-07-22T06:00:00+09:00",
+      "unique_angle": "낮은 금리만 보고 움직이지 않는 계산법",
+      "structure_type": "실수예방형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/대출-상담-준비/대출-갈아타기-판단-중도상환수수료-낮은-금리만-보고-움직이지-않는-계산법.mdx",
+      "research_path": "output/sinhonjigi/research/대출-상담-준비/대출-갈아타기-판단-중도상환수수료-낮은-금리만-보고-움직이지-않는-계산법.json"
+    },
+    {
+      "id": "a270",
+      "title": "카드론 놓치지 않는 신용점수 대출 준비 서류와 일정 정리",
+      "subtitle": "신용점수 대출 준비를 카드론, 현금서비스, 연체, 조회이력 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신용점수 대출 준비",
+      "expanded_keywords": [
+        "카드론",
+        "현금서비스",
+        "연체",
+        "조회이력"
+      ],
+      "cluster": "대출 상담 준비",
+      "scheduled_at": "2026-07-22T11:00:00+09:00",
+      "unique_angle": "상담 전 한 달 동안 피해야 할 행동",
+      "structure_type": "문서점검형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/대출-상담-준비/신용점수-대출-준비-카드론-상담-전-한-달-동안-피해야-할-행동.mdx",
+      "research_path": "output/sinhonjigi/research/대출-상담-준비/신용점수-대출-준비-카드론-상담-전-한-달-동안-피해야-할-행동.json"
+    },
+    {
+      "id": "a271",
+      "title": "웨딩박람회 현장계약 계약금 기준과 체크리스트, 취소기한 확인 순서",
+      "subtitle": "웨딩박람회 현장계약를 계약금, 취소기한, 사은품, 제휴조건 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "웨딩박람회 현장계약",
+      "expanded_keywords": [
+        "계약금",
+        "취소기한",
+        "사은품",
+        "제휴조건"
+      ],
+      "cluster": "웨딩박람회 상담 방어",
+      "scheduled_at": "2026-07-22T16:00:00+09:00",
+      "unique_angle": "당일 혜택보다 해지 조건을 먼저 보는 법",
+      "structure_type": "비교형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/웨딩박람회-상담-방어/웨딩박람회-현장계약-계약금-당일-혜택보다-해지-조건을-먼저-보는-법.mdx",
+      "research_path": "output/sinhonjigi/research/웨딩박람회-상담-방어/웨딩박람회-현장계약-계약금-당일-혜택보다-해지-조건을-먼저-보는-법.json"
+    },
+    {
+      "id": "a272",
+      "title": "웨딩박람회 상담 동선 예산 핵심 정리와 예식장 주의점",
+      "subtitle": "웨딩박람회 상담 동선를 예산, 스드메, 예식장, 혼수 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "웨딩박람회 상담 동선",
+      "expanded_keywords": [
+        "예산",
+        "스드메",
+        "예식장",
+        "혼수"
+      ],
+      "cluster": "웨딩박람회 상담 방어",
+      "scheduled_at": "2026-07-22T21:00:00+09:00",
+      "unique_angle": "상담 피로를 줄이는 방문 순서",
+      "structure_type": "체크리스트형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/웨딩박람회-상담-방어/웨딩박람회-상담-동선-예산-상담-피로를-줄이는-방문-순서.mdx",
+      "research_path": "output/sinhonjigi/research/웨딩박람회-상담-방어/웨딩박람회-상담-동선-예산-상담-피로를-줄이는-방문-순서.json"
+    },
+    {
+      "id": "a273",
+      "title": "마케팅동의 기준으로 정리한 웨딩박람회 개인정보 절차형 가이드",
+      "subtitle": "웨딩박람회 개인정보를 마케팅동의, 연락처, 철회, 제3자제공 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "웨딩박람회 개인정보",
+      "expanded_keywords": [
+        "마케팅동의",
+        "연락처",
+        "철회",
+        "제3자제공"
+      ],
+      "cluster": "웨딩박람회 상담 방어",
+      "scheduled_at": "2026-07-23T02:00:00+09:00",
+      "unique_angle": "상담 후 전화 폭탄을 줄이는 체크포인트",
+      "structure_type": "절차형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/웨딩박람회-상담-방어/웨딩박람회-개인정보-마케팅동의-상담-후-전화-폭탄을-줄이는-체크포인트.mdx",
+      "research_path": "output/sinhonjigi/research/웨딩박람회-상담-방어/웨딩박람회-개인정보-마케팅동의-상담-후-전화-폭탄을-줄이는-체크포인트.json"
+    },
+    {
+      "id": "a274",
+      "title": "웨딩박람회 견적 비교 준비 전 포함항목과 추가금 먼저 확인하기",
+      "subtitle": "웨딩박람회 견적 비교를 포함항목, 추가금, 계약주체, 유효기간 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "웨딩박람회 견적 비교",
+      "expanded_keywords": [
+        "포함항목",
+        "추가금",
+        "계약주체",
+        "유효기간"
+      ],
+      "cluster": "웨딩박람회 상담 방어",
+      "scheduled_at": "2026-07-23T07:00:00+09:00",
+      "unique_angle": "싼 견적과 불완전한 견적 구분법",
+      "structure_type": "문제해결형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/웨딩박람회-상담-방어/웨딩박람회-견적-비교-포함항목-싼-견적과-불완전한-견적-구분법.mdx",
+      "research_path": "output/sinhonjigi/research/웨딩박람회-상담-방어/웨딩박람회-견적-비교-포함항목-싼-견적과-불완전한-견적-구분법.json"
+    },
+    {
+      "id": "a275",
+      "title": "웨딩박람회 사은품 조건 수령시점 실전 점검표와 반환조건 준비법",
+      "subtitle": "웨딩박람회 사은품 조건를 수령시점, 반환조건, 제세공과금, 배송비 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "웨딩박람회 사은품 조건",
+      "expanded_keywords": [
+        "수령시점",
+        "반환조건",
+        "제세공과금",
+        "배송비"
+      ],
+      "cluster": "웨딩박람회 상담 방어",
+      "scheduled_at": "2026-07-23T12:00:00+09:00",
+      "unique_angle": "공짜처럼 보이는 혜택의 비용 확인법",
+      "structure_type": "FAQ형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/웨딩박람회-상담-방어/웨딩박람회-사은품-조건-수령시점-공짜처럼-보이는-혜택의-비용-확인법.mdx",
+      "research_path": "output/sinhonjigi/research/웨딩박람회-상담-방어/웨딩박람회-사은품-조건-수령시점-공짜처럼-보이는-혜택의-비용-확인법.json"
+    },
+    {
+      "id": "a276",
+      "title": "하객 명단 정리 초대범위 한눈에 정리, 주소록 실무 흐름",
+      "subtitle": "하객 명단 정리를 초대범위, 주소록, 좌석, 답례 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "하객 명단 정리",
+      "expanded_keywords": [
+        "초대범위",
+        "주소록",
+        "좌석",
+        "답례"
+      ],
+      "cluster": "결혼식 하객 운영",
+      "scheduled_at": "2026-07-23T17:00:00+09:00",
+      "unique_angle": "부모님 명단과 부부 명단을 합치는 기준",
+      "structure_type": "사례형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/결혼식-하객-운영/하객-명단-정리-초대범위-부모님-명단과-부부-명단을-합치는-기준.mdx",
+      "research_path": "output/sinhonjigi/research/결혼식-하객-운영/하객-명단-정리-초대범위-부모님-명단과-부부-명단을-합치는-기준.json"
+    },
+    {
+      "id": "a277",
+      "title": "발송시점과 개인정보로 보는 모바일 청첩장 발송 전략",
+      "subtitle": "모바일 청첩장 발송를 발송시점, 개인정보, 오시는길, 계좌 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "모바일 청첩장 발송",
+      "expanded_keywords": [
+        "발송시점",
+        "개인정보",
+        "오시는길",
+        "계좌"
+      ],
+      "cluster": "결혼식 하객 운영",
+      "scheduled_at": "2026-07-23T22:00:00+09:00",
+      "unique_angle": "편하지만 조심해야 할 문구 점검",
+      "structure_type": "의사결정형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/결혼식-하객-운영/모바일-청첩장-발송-발송시점-편하지만-조심해야-할-문구-점검.mdx",
+      "research_path": "output/sinhonjigi/research/결혼식-하객-운영/모바일-청첩장-발송-발송시점-편하지만-조심해야-할-문구-점검.json"
+    },
+    {
+      "id": "a278",
+      "title": "축의금 접수 준비 접수자 비용 판단 기준, 명단 주의점",
+      "subtitle": "축의금 접수 준비를 접수자, 봉투, 명단, 정산 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "축의금 접수 준비",
+      "expanded_keywords": [
+        "접수자",
+        "봉투",
+        "명단",
+        "정산"
+      ],
+      "cluster": "결혼식 하객 운영",
+      "scheduled_at": "2026-07-24T03:00:00+09:00",
+      "unique_angle": "분실과 누락을 줄이는 역할 분담",
+      "structure_type": "일정관리형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/결혼식-하객-운영/축의금-접수-준비-접수자-분실과-누락을-줄이는-역할-분담.mdx",
+      "research_path": "output/sinhonjigi/research/결혼식-하객-운영/축의금-접수-준비-접수자-분실과-누락을-줄이는-역할-분담.json"
+    },
+    {
+      "id": "a279",
+      "title": "결혼식 주차 안내 주차권 최종 점검포인트, 혼잡시간과 동선",
+      "subtitle": "결혼식 주차 안내를 주차권, 혼잡시간, 대중교통, 동선 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "결혼식 주차 안내",
+      "expanded_keywords": [
+        "주차권",
+        "혼잡시간",
+        "대중교통",
+        "동선"
+      ],
+      "cluster": "결혼식 하객 운영",
+      "scheduled_at": "2026-07-24T08:00:00+09:00",
+      "unique_angle": "하객 불편을 줄이는 사전 안내법",
+      "structure_type": "실수예방형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/결혼식-하객-운영/결혼식-주차-안내-주차권-하객-불편을-줄이는-사전-안내법.mdx",
+      "research_path": "output/sinhonjigi/research/결혼식-하객-운영/결혼식-주차-안내-주차권-하객-불편을-줄이는-사전-안내법.json"
+    },
+    {
+      "id": "a280",
+      "title": "결혼식 답례품 선택 실수 방지 가이드, 예산부터 보관까지",
+      "subtitle": "결혼식 답례품 선택를 예산, 보관, 배송, 수량 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "결혼식 답례품 선택",
+      "expanded_keywords": [
+        "예산",
+        "보관",
+        "배송",
+        "수량"
+      ],
+      "cluster": "결혼식 하객 운영",
+      "scheduled_at": "2026-07-24T13:00:00+09:00",
+      "unique_angle": "센스보다 실패 가능성을 낮추는 기준",
+      "structure_type": "문서점검형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/결혼식-하객-운영/결혼식-답례품-선택-예산-센스보다-실패-가능성을-낮추는-기준.mdx",
+      "research_path": "output/sinhonjigi/research/결혼식-하객-운영/결혼식-답례품-선택-예산-센스보다-실패-가능성을-낮추는-기준.json"
+    },
+    {
+      "id": "a281",
+      "title": "고정비 신청 전 확인법: 신혼 첫 달 카드값 실전 가이드",
+      "subtitle": "신혼 첫 달 카드값를 고정비, 혼수잔금, 외식, 교통 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼 첫 달 카드값",
+      "expanded_keywords": [
+        "고정비",
+        "혼수잔금",
+        "외식",
+        "교통"
+      ],
+      "cluster": "신혼 소비 통제",
+      "scheduled_at": "2026-07-24T18:00:00+09:00",
+      "unique_angle": "예산이 무너지는 지출을 빨리 찾는 방법",
+      "structure_type": "비교형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-소비-통제/신혼-첫-달-카드값-고정비-예산이-무너지는-지출을-빨리-찾는-방법.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-소비-통제/신혼-첫-달-카드값-고정비-예산이-무너지는-지출을-빨리-찾는-방법.json"
+    },
+    {
+      "id": "a282",
+      "title": "부부 용돈 규칙 개인계좌 절차 한눈에 정리, 공동계좌 확인 순서",
+      "subtitle": "부부 용돈 규칙를 개인계좌, 공동계좌, 취미비, 경조사 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "부부 용돈 규칙",
+      "expanded_keywords": [
+        "개인계좌",
+        "공동계좌",
+        "취미비",
+        "경조사"
+      ],
+      "cluster": "신혼 소비 통제",
+      "scheduled_at": "2026-07-24T23:00:00+09:00",
+      "unique_angle": "간섭 없이 통제력을 남기는 기준",
+      "structure_type": "체크리스트형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-소비-통제/부부-용돈-규칙-개인계좌-간섭-없이-통제력을-남기는-기준.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-소비-통제/부부-용돈-규칙-개인계좌-간섭-없이-통제력을-남기는-기준.json"
+    },
+    {
+      "id": "a283",
+      "title": "신혼 구독서비스 정리 OTT 지원 기준, 멤버십 최종 점검포인트",
+      "subtitle": "신혼 구독서비스 정리를 OTT, 멤버십, 정기배송, 보험앱 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼 구독서비스 정리",
+      "expanded_keywords": [
+        "OTT",
+        "멤버십",
+        "정기배송",
+        "보험앱"
+      ],
+      "cluster": "신혼 소비 통제",
+      "scheduled_at": "2026-07-25T04:00:00+09:00",
+      "unique_angle": "작은 자동결제를 한 번에 줄이는 법",
+      "structure_type": "절차형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-소비-통제/신혼-구독서비스-정리-ott-작은-자동결제를-한-번에-줄이는-법.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-소비-통제/신혼-구독서비스-정리-ott-작은-자동결제를-한-번에-줄이는-법.json"
+    },
+    {
+      "id": "a284",
+      "title": "부부 비상금 목표 생활비 현실 가이드, 의료비 기준과 체크리스트",
+      "subtitle": "부부 비상금 목표를 생활비, 의료비, 실직, 수리비 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "부부 비상금 목표",
+      "expanded_keywords": [
+        "생활비",
+        "의료비",
+        "실직",
+        "수리비"
+      ],
+      "cluster": "신혼 소비 통제",
+      "scheduled_at": "2026-07-25T09:00:00+09:00",
+      "unique_angle": "몇 개월치를 둘지 현실적으로 정하는 계산법",
+      "structure_type": "문제해결형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-소비-통제/부부-비상금-목표-생활비-몇-개월치를-둘지-현실적으로-정하는-계산법.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-소비-통제/부부-비상금-목표-생활비-몇-개월치를-둘지-현실적으로-정하는-계산법.json"
+    },
+    {
+      "id": "a285",
+      "title": "주거비 확인 순서로 보는 신혼 가계부 항목 서류와 일정 정리",
+      "subtitle": "신혼 가계부 항목를 주거비, 식비, 교통비, 부모님, 데이트 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼 가계부 항목",
+      "expanded_keywords": [
+        "주거비",
+        "식비",
+        "교통비",
+        "부모님",
+        "데이트"
+      ],
+      "cluster": "신혼 소비 통제",
+      "scheduled_at": "2026-07-25T14:00:00+09:00",
+      "unique_angle": "싸우지 않고 지출을 보는 분류 기준",
+      "structure_type": "FAQ형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-소비-통제/신혼-가계부-항목-주거비-싸우지-않고-지출을-보는-분류-기준.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-소비-통제/신혼-가계부-항목-주거비-싸우지-않고-지출을-보는-분류-기준.json"
+    },
+    {
+      "id": "a286",
+      "title": "양가 방문 빈도 명절 전략, 생일과 거리 판단 기준",
+      "subtitle": "양가 방문 빈도를 명절, 생일, 거리, 근무일정 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "양가 방문 빈도",
+      "expanded_keywords": [
+        "명절",
+        "생일",
+        "거리",
+        "근무일정"
+      ],
+      "cluster": "가족 경계 설정",
+      "scheduled_at": "2026-07-25T19:00:00+09:00",
+      "unique_angle": "공평함보다 지속 가능한 기준 세우기",
+      "structure_type": "사례형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/가족-경계-설정/양가-방문-빈도-명절-공평함보다-지속-가능한-기준-세우기.mdx",
+      "research_path": "output/sinhonjigi/research/가족-경계-설정/양가-방문-빈도-명절-공평함보다-지속-가능한-기준-세우기.json"
+    },
+    {
+      "id": "a287",
+      "title": "부모님 경제지원 경계 생활비 준비 전 대출 최종 점검포인트",
+      "subtitle": "부모님 경제지원 경계를 생활비, 대출, 선물, 간섭 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "부모님 경제지원 경계",
+      "expanded_keywords": [
+        "생활비",
+        "대출",
+        "선물",
+        "간섭"
+      ],
+      "cluster": "가족 경계 설정",
+      "scheduled_at": "2026-07-26T00:00:00+09:00",
+      "unique_angle": "감사와 부담을 분리해서 말하는 법",
+      "structure_type": "의사결정형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/가족-경계-설정/부모님-경제지원-경계-생활비-감사와-부담을-분리해서-말하는-법.mdx",
+      "research_path": "output/sinhonjigi/research/가족-경계-설정/부모님-경제지원-경계-생활비-감사와-부담을-분리해서-말하는-법.json"
+    },
+    {
+      "id": "a288",
+      "title": "명절 일정 조율 이동시간 기준과 체크리스트",
+      "subtitle": "명절 일정 조율를 이동시간, 숙박, 식사, 휴식 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "명절 일정 조율",
+      "expanded_keywords": [
+        "이동시간",
+        "숙박",
+        "식사",
+        "휴식"
+      ],
+      "cluster": "가족 경계 설정",
+      "scheduled_at": "2026-07-26T05:00:00+09:00",
+      "unique_angle": "매년 반복되는 갈등을 줄이는 일정표",
+      "structure_type": "일정관리형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/가족-경계-설정/명절-일정-조율-이동시간-매년-반복되는-갈등을-줄이는-일정표.mdx",
+      "research_path": "output/sinhonjigi/research/가족-경계-설정/명절-일정-조율-이동시간-매년-반복되는-갈등을-줄이는-일정표.json"
+    },
+    {
+      "id": "a289",
+      "title": "가족 단체대화방 규칙, 연락빈도부터 사진공유까지 신청 전 확인법",
+      "subtitle": "가족 단체대화방 규칙를 연락빈도, 사진공유, 답장, 사생활 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "가족 단체대화방 규칙",
+      "expanded_keywords": [
+        "연락빈도",
+        "사진공유",
+        "답장",
+        "사생활"
+      ],
+      "cluster": "가족 경계 설정",
+      "scheduled_at": "2026-07-26T10:00:00+09:00",
+      "unique_angle": "작은 불편을 초기에 정리하는 방법",
+      "structure_type": "실수예방형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/가족-경계-설정/가족-단체대화방-규칙-연락빈도-작은-불편을-초기에-정리하는-방법.mdx",
+      "research_path": "output/sinhonjigi/research/가족-경계-설정/가족-단체대화방-규칙-연락빈도-작은-불편을-초기에-정리하는-방법.json"
+    },
+    {
+      "id": "a290",
+      "title": "가족행사로 보는 부부 우선순위 합의 실수 줄이는 준비 순서",
+      "subtitle": "부부 우선순위 합의를 가족행사, 돈, 시간, 결정권 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "부부 우선순위 합의",
+      "expanded_keywords": [
+        "가족행사",
+        "돈",
+        "시간",
+        "결정권"
+      ],
+      "cluster": "가족 경계 설정",
+      "scheduled_at": "2026-07-26T15:00:00+09:00",
+      "unique_angle": "양가보다 먼저 부부가 맞춰야 할 질문",
+      "structure_type": "문서점검형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/가족-경계-설정/부부-우선순위-합의-가족행사-양가보다-먼저-부부가-맞춰야-할-질문.mdx",
+      "research_path": "output/sinhonjigi/research/가족-경계-설정/부부-우선순위-합의-가족행사-양가보다-먼저-부부가-맞춰야-할-질문.json"
+    },
+    {
+      "id": "a291",
+      "title": "임신 전 지원제도 탐색 보건소 FAQ와 검진비 확인법",
+      "subtitle": "임신 전 지원제도 탐색를 보건소, 검진비, 엽산, 상담 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "임신 전 지원제도 탐색",
+      "expanded_keywords": [
+        "보건소",
+        "검진비",
+        "엽산",
+        "상담"
+      ],
+      "cluster": "출산 전 행정 연결",
+      "scheduled_at": "2026-07-26T20:00:00+09:00",
+      "unique_angle": "아직 임신 전이어도 확인할 공공지원",
+      "structure_type": "비교형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/출산-전-행정-연결/임신-전-지원제도-탐색-보건소-아직-임신-전이어도-확인할-공공지원.mdx",
+      "research_path": "output/sinhonjigi/research/출산-전-행정-연결/임신-전-지원제도-탐색-보건소-아직-임신-전이어도-확인할-공공지원.json"
+    },
+    {
+      "id": "a292",
+      "title": "난임 지원 신청 준비 비교 가이드, 소득기준과 진단서 판단 기준",
+      "subtitle": "난임 지원 신청 준비를 소득기준, 진단서, 시술기관, 횟수 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "난임 지원 신청 준비",
+      "expanded_keywords": [
+        "소득기준",
+        "진단서",
+        "시술기관",
+        "횟수"
+      ],
+      "cluster": "출산 전 행정 연결",
+      "scheduled_at": "2026-07-27T01:00:00+09:00",
+      "unique_angle": "병원 일정과 행정 접수를 맞추는 법",
+      "structure_type": "체크리스트형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/출산-전-행정-연결/난임-지원-신청-준비-소득기준-병원-일정과-행정-접수를-맞추는-법.mdx",
+      "research_path": "output/sinhonjigi/research/출산-전-행정-연결/난임-지원-신청-준비-소득기준-병원-일정과-행정-접수를-맞추는-법.json"
+    },
+    {
+      "id": "a293",
+      "title": "임신 바우처 카드 선택 국민행복카드 상황별 판단 가이드",
+      "subtitle": "임신 바우처 카드 선택를 국민행복카드, 진료비, 사용처, 발급일 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "임신 바우처 카드 선택",
+      "expanded_keywords": [
+        "국민행복카드",
+        "진료비",
+        "사용처",
+        "발급일"
+      ],
+      "cluster": "출산 전 행정 연결",
+      "scheduled_at": "2026-07-27T06:00:00+09:00",
+      "unique_angle": "카드 혜택보다 사용 제한을 먼저 보는 기준",
+      "structure_type": "절차형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/출산-전-행정-연결/임신-바우처-카드-선택-국민행복카드-카드-혜택보다-사용-제한을-먼저-보는-기준.mdx",
+      "research_path": "output/sinhonjigi/research/출산-전-행정-연결/임신-바우처-카드-선택-국민행복카드-카드-혜택보다-사용-제한을-먼저-보는-기준.json"
+    },
+    {
+      "id": "a294",
+      "title": "출산 전 회사 서류 출산휴가 체크리스트, 급여신청 확인 순서",
+      "subtitle": "출산 전 회사 서류를 출산휴가, 육아휴직, 급여신청, 확인서 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "출산 전 회사 서류",
+      "expanded_keywords": [
+        "출산휴가",
+        "육아휴직",
+        "급여신청",
+        "확인서"
+      ],
+      "cluster": "출산 전 행정 연결",
+      "scheduled_at": "2026-07-27T11:00:00+09:00",
+      "unique_angle": "회사와 공단 절차를 나눠 준비하는 순서",
+      "structure_type": "문제해결형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/출산-전-행정-연결/출산-전-회사-서류-출산휴가-회사와-공단-절차를-나눠-준비하는-순서.mdx",
+      "research_path": "output/sinhonjigi/research/출산-전-행정-연결/출산-전-회사-서류-출산휴가-회사와-공단-절차를-나눠-준비하는-순서.json"
+    },
+    {
+      "id": "a295",
+      "title": "첫만남이용권 사전준비 출생신고 기준과 체크리스트, 복지로 확인 순서",
+      "subtitle": "첫만남이용권 사전준비를 출생신고, 복지로, 지급일, 사용처 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "첫만남이용권 사전준비",
+      "expanded_keywords": [
+        "출생신고",
+        "복지로",
+        "지급일",
+        "사용처"
+      ],
+      "cluster": "출산 전 행정 연결",
+      "scheduled_at": "2026-07-27T16:00:00+09:00",
+      "unique_angle": "출산 후 한 번에 처리할 항목 미리 보기",
+      "structure_type": "FAQ형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/출산-전-행정-연결/첫만남이용권-사전준비-출생신고-출산-후-한-번에-처리할-항목-미리-보기.mdx",
+      "research_path": "output/sinhonjigi/research/출산-전-행정-연결/첫만남이용권-사전준비-출생신고-출산-후-한-번에-처리할-항목-미리-보기.json"
+    },
+    {
+      "id": "a296",
+      "title": "신혼집 화재 안전 소화기 핵심 정리와 멀티탭 주의점",
+      "subtitle": "신혼집 화재 안전를 소화기, 감지기, 멀티탭, 가스밸브 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼집 화재 안전",
+      "expanded_keywords": [
+        "소화기",
+        "감지기",
+        "멀티탭",
+        "가스밸브"
+      ],
+      "cluster": "신혼 안전 체크",
+      "scheduled_at": "2026-07-27T21:00:00+09:00",
+      "unique_angle": "입주 첫 주에 확인할 안전 목록",
+      "structure_type": "사례형",
+      "visual_elements": [
+        "info_callout",
+        "comparison_table",
+        "decision_box",
+        "faq_block"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-안전-체크/신혼집-화재-안전-소화기-입주-첫-주에-확인할-안전-목록.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-안전-체크/신혼집-화재-안전-소화기-입주-첫-주에-확인할-안전-목록.json"
+    },
+    {
+      "id": "a297",
+      "title": "초기화 기준으로 정리한 도어락 비밀번호 관리 의사결정형 가이드",
+      "subtitle": "도어락 비밀번호 관리를 초기화, 임시번호, 가족공유, 이사전세입자 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "도어락 비밀번호 관리",
+      "expanded_keywords": [
+        "초기화",
+        "임시번호",
+        "가족공유",
+        "이사전세입자"
+      ],
+      "cluster": "신혼 안전 체크",
+      "scheduled_at": "2026-07-28T02:00:00+09:00",
+      "unique_angle": "누가 알고 있는지 모르는 번호 정리법",
+      "structure_type": "의사결정형",
+      "visual_elements": [
+        "caution_box",
+        "checklist_box",
+        "timeline",
+        "official_link_card"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-안전-체크/도어락-비밀번호-관리-초기화-누가-알고-있는지-모르는-번호-정리법.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-안전-체크/도어락-비밀번호-관리-초기화-누가-알고-있는지-모르는-번호-정리법.json"
+    },
+    {
+      "id": "a298",
+      "title": "택배 보관 동선 준비 전 무인택배함과 공동현관 먼저 확인하기",
+      "subtitle": "택배 보관 동선를 무인택배함, 공동현관, 분실, 개인정보 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "택배 보관 동선",
+      "expanded_keywords": [
+        "무인택배함",
+        "공동현관",
+        "분실",
+        "개인정보"
+      ],
+      "cluster": "신혼 안전 체크",
+      "scheduled_at": "2026-07-28T07:00:00+09:00",
+      "unique_angle": "작은 분실과 정보 노출을 줄이는 습관",
+      "structure_type": "일정관리형",
+      "visual_elements": [
+        "decision_box",
+        "scenario_table",
+        "step_cards",
+        "risk_labels"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-안전-체크/택배-보관-동선-무인택배함-작은-분실과-정보-노출을-줄이는-습관.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-안전-체크/택배-보관-동선-무인택배함-작은-분실과-정보-노출을-줄이는-습관.json"
+    },
+    {
+      "id": "a299",
+      "title": "신혼집 방범 체크 창문잠금 실전 점검표와 현관센서 준비법",
+      "subtitle": "신혼집 방범 체크를 창문잠금, 현관센서, CCTV, 관리실 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "신혼집 방범 체크",
+      "expanded_keywords": [
+        "창문잠금",
+        "현관센서",
+        "CCTV",
+        "관리실"
+      ],
+      "cluster": "신혼 안전 체크",
+      "scheduled_at": "2026-07-28T12:00:00+09:00",
+      "unique_angle": "불안감을 실제 점검표로 바꾸는 법",
+      "structure_type": "실수예방형",
+      "visual_elements": [
+        "info_callout",
+        "document_table",
+        "mistake_list",
+        "final_check"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-안전-체크/신혼집-방범-체크-창문잠금-불안감을-실제-점검표로-바꾸는-법.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-안전-체크/신혼집-방범-체크-창문잠금-불안감을-실제-점검표로-바꾸는-법.json"
+    },
+    {
+      "id": "a300",
+      "title": "응급 연락망 만들기 병원 한눈에 정리, 가족 실무 흐름",
+      "subtitle": "응급 연락망 만들기를 병원, 가족, 관리실, 보험 기준으로 확인해 SEO·GEO·AEO 검색 의도에 맞게 정리한 신혼 맞춤 가이드",
+      "main_keyword": "응급 연락망 만들기",
+      "expanded_keywords": [
+        "병원",
+        "가족",
+        "관리실",
+        "보험"
+      ],
+      "cluster": "신혼 안전 체크",
+      "scheduled_at": "2026-07-28T17:00:00+09:00",
+      "unique_angle": "둘 중 한 명이 없을 때도 움직이는 연락 순서",
+      "structure_type": "문서점검형",
+      "visual_elements": [
+        "comparison_table",
+        "caution_box",
+        "example_box",
+        "action_list"
+      ],
+      "accent_colors": [
+        "#2563EB",
+        "#B45309"
+      ],
+      "draft_path": "output/sinhonjigi/drafts/신혼-안전-체크/응급-연락망-만들기-병원-둘-중-한-명이-없을-때도-움직이는-연락-순서.mdx",
+      "research_path": "output/sinhonjigi/research/신혼-안전-체크/응급-연락망-만들기-병원-둘-중-한-명이-없을-때도-움직이는-연락-순서.json"
+    }
+  ],
+  "first_scheduled_at": "2026-07-08T02:00:00+09:00",
+  "last_scheduled_at": "2026-07-28T17:00:00+09:00"
+}
