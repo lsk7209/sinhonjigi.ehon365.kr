@@ -287,7 +287,7 @@ function renderInline(text: string) {
         <Link
           key={index}
           href={href}
-          className="font-semibold text-[var(--lav-600)] underline"
+          className="font-semibold text-[var(--article-accent,var(--lav-600))] underline"
         >
           {label}
         </Link>
@@ -300,7 +300,7 @@ function renderInline(text: string) {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="font-semibold text-[var(--lav-600)] underline"
+        className="font-semibold text-[var(--article-accent,var(--lav-600))] underline"
       >
         {label}
       </a>

@@ -1,6 +1,12 @@
+import type { CSSProperties } from "react";
 import Link from "next/link";
 import GuideMarkdown, { getGuideHeadings } from "@/components/content/GuideMarkdown";
-import { getGuideDraft, type GuideArticle, type GuideSection } from "@/lib/guides";
+import {
+  getGuideDraft,
+  getGuideResearch,
+  type GuideArticle,
+  type GuideSection,
+} from "@/lib/guides";
 
 interface Props {
   article: GuideArticle;
@@ -21,20 +27,58 @@ export default function GuideArticlePage({ article, section }: Props) {
   }
 
   const headings = getGuideHeadings(draft.body);
+  const research = getGuideResearch(article);
+  const officialSources = (research?.sources ?? [])
+    .filter((source) => source.url && (source.name || source.title))
+    .slice(0, 4);
+  const [accent, accentSoft] = article.accent_colors?.length
+    ? article.accent_colors
+    : ["#C9A961", "#0F1E3D"];
+  const articleUrl = `/${section}/guide/${article.slug}`;
+  const articleStyle = {
+    "--article-accent": accent,
+    "--article-accent-soft": accentSoft,
+  } as CSSProperties;
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "홈", item: "/" },
+        { "@type": "ListItem", position: 2, name: "가이드", item: `/${section}/guide` },
+        { "@type": "ListItem", position: 3, name: article.title, item: articleUrl },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: article.title,
+      description: article.subtitle,
+      datePublished: article.scheduled_at,
+      dateModified: article.scheduled_at,
+      author: { "@type": "Organization", name: "신혼지기" },
+      mainEntityOfPage: articleUrl,
+      keywords: [article.main_keyword, ...article.expanded_keywords].join(", "),
+    },
+  ];
 
   return (
-    <article className="mx-auto max-w-3xl px-5 py-8">
+    <article className="mx-auto max-w-3xl px-5 py-8" style={articleStyle}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <nav className="mb-4 flex items-center gap-2 text-sm text-[var(--text-caption)]">
-        <Link href={`/${section}/guide`} className="font-bold text-[var(--lav-600)]">
+        <Link href={`/${section}/guide`} className="font-bold text-[var(--article-accent)]">
           가이드
         </Link>
         <span>/</span>
         <span>{article.title}</span>
       </nav>
 
-      <header className="rounded-2xl border border-[var(--lav-200)] bg-[var(--gradient-hero)] p-7 shadow-[var(--shadow-md)]">
+      <header className="rounded-2xl border border-[var(--article-accent)] bg-[var(--gradient-hero)] p-7 shadow-[var(--shadow-md)]">
         <div className="flex flex-wrap gap-2">
-          <span className="rounded-full bg-white/80 px-3 py-1 text-xs font-bold text-[var(--lav-600)]">
+          <span className="rounded-full bg-white/80 px-3 py-1 text-xs font-bold text-[var(--article-accent)]">
             {article.quality_score}점
           </span>
           <span className="rounded-full bg-white/80 px-3 py-1 text-xs font-bold text-[var(--text-secondary)]">
@@ -61,7 +105,7 @@ export default function GuideArticlePage({ article, section }: Props) {
             <h2 className="text-base font-extrabold text-[var(--text-strong)]">
               목차
             </h2>
-            <span className="rounded-full bg-white/80 px-2.5 py-1 text-xs font-bold text-[var(--gold-deep)]">
+            <span className="rounded-full bg-white/80 px-2.5 py-1 text-xs font-bold text-[var(--article-accent)]">
               {headings.length}개 섹션
             </span>
           </div>
@@ -70,7 +114,7 @@ export default function GuideArticlePage({ article, section }: Props) {
               <li key={heading.id}>
                 <a
                   href={`#${heading.id}`}
-                  className={`block rounded-xl px-3 py-2 text-sm leading-6 transition hover:bg-white hover:text-[var(--gold-deep)] ${
+                  className={`block rounded-xl px-3 py-2 text-sm leading-6 transition hover:bg-white hover:text-[var(--article-accent)] ${
                     heading.level === 3
                       ? "ml-4 border-l border-[var(--border)] text-[var(--text-secondary)]"
                       : "font-bold text-[var(--text-strong)]"
@@ -87,6 +131,36 @@ export default function GuideArticlePage({ article, section }: Props) {
       <section className="mt-8 rounded-2xl border border-[var(--border)] bg-white p-6 shadow-[var(--shadow-sm)]">
         <GuideMarkdown body={draft.body} />
       </section>
+
+      {officialSources.length > 0 ? (
+        <aside className="mt-6 rounded-2xl border border-[var(--border-emphasis)] bg-[var(--bg-soft)] p-5">
+          <h2 className="text-base font-extrabold text-[var(--text-strong)]">
+            공식 확인 경로
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-[var(--text-secondary)]">
+            제도, 금액, 신청 조건은 바뀔 수 있으니 실행 전 공식 페이지에서 한 번 더 확인하세요.
+          </p>
+          <ul className="mt-4 space-y-2 text-sm">
+            {officialSources.map((source) => (
+              <li key={source.url}>
+                <a
+                  href={source.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[var(--article-accent)] underline"
+                >
+                  {source.name || source.title}
+                </a>
+                {source.accessed ? (
+                  <span className="ml-2 text-[var(--text-caption)]">
+                    확인일 {source.accessed}
+                  </span>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </aside>
+      ) : null}
     </article>
   );
 }

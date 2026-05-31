@@ -17,11 +17,26 @@ export interface GuideArticle {
   research_path: string;
   quality_score: number;
   status: string;
+  accent_colors?: string[];
 }
 
 export interface GuideDraft {
   article: GuideArticle;
   body: string;
+}
+
+export interface GuideResearchSource {
+  id?: string;
+  name?: string;
+  title?: string;
+  url?: string;
+  type?: string;
+  official?: boolean;
+  accessed?: string;
+}
+
+export interface GuideResearch {
+  sources?: GuideResearchSource[];
 }
 
 interface GuideManifest {
@@ -86,6 +101,22 @@ export function getGuideDraft(article: GuideArticle): GuideDraft | null {
     article,
     body: stripFrontmatter(raw),
   };
+}
+
+export function getGuideResearch(article: GuideArticle): GuideResearch | null {
+  const researchPath = path.join(
+    outputDir,
+    "research",
+    article.cluster,
+    `${article.slug}.json`,
+  );
+  if (!fs.existsSync(researchPath)) return null;
+
+  try {
+    return JSON.parse(fs.readFileSync(researchPath, "utf-8")) as GuideResearch;
+  } catch {
+    return null;
+  }
 }
 
 export function getGuideStaticParams(section: GuideSection) {
