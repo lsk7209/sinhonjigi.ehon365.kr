@@ -13,6 +13,7 @@ const inter = Inter({
 });
 
 const googleAnalyticsId = "G-H62XHNDF13";
+const adsensePublisherId = "ca-pub-3050601904412736";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -49,6 +50,13 @@ export default function RootLayout({
         <meta
           name="naver-site-verification"
           content="ebb63fffe6fffb291fc58cd2e6f0b094d21a07ce"
+        />
+        <Script
+          id="google-adsense"
+          async
+          crossOrigin="anonymous"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsensePublisherId}`}
+          strategy="afterInteractive"
         />
         <Script
           async
