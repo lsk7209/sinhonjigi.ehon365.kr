@@ -440,6 +440,41 @@ export default function HomeClient() {
             <Link href="/disclosure">광고 고지 보기</Link>
           </p>
         </div>
+        <section className="sj-section">
+          <div className="sj-container sj-about-mini">
+            <div>
+              <span className="sj-eyebrow">검토 기준</span>
+              <h2>지원금과 예식장 정보는 공식 확인을 전제로 읽어야 합니다</h2>
+              <p>
+                신혼지기는 결혼 준비, 신혼부부 지원금, 예식장 탐색을 시작하는 사용자를 위한 정보 허브입니다.
+                지역별 제도와 금융 조건은 공고일, 예산, 접수 기관, 혼인 신고 시점, 소득 기준에 따라 달라질
+                수 있으므로 사이트의 요약만으로 신청 가능 여부를 확정하면 안 됩니다.
+              </p>
+              <p>
+                예식장과 웨딩홀 정보도 실제 상담, 잔여 날짜, 보증 인원, 식대, 대관료, 추가 옵션, 환불 규정에
+                따라 최종 비용이 달라집니다. 후보를 고를 때는 위치와 분위기뿐 아니라 계약서 조항, 취소 조건,
+                주차, 대중교통, 하객 동선까지 함께 확인하는 것이 안전합니다.
+              </p>
+              <p>
+                광고가 포함된 영역은 본문과 구분하며, 광고 노출이 지원금 정보의 순서나 결론을 결정하지
+                않습니다. 사용자는 최종 신청 전 정부24, 지자체 공고, 금융기관 상품설명서, 예식장 공식 견적을
+                기준으로 다시 확인해야 합니다.
+              </p>
+            </div>
+            <div className="sj-guide-list">
+              <Link href="/blog">
+                <span>공개 글</span>
+                <strong>지원금과 결혼 준비 가이드 보기</strong>
+                <Icon name="arrow-right" size={15} />
+              </Link>
+              <Link href="/contact">
+                <span>정정 요청</span>
+                <strong>오래된 공고나 링크 오류 제보</strong>
+                <Icon name="arrow-right" size={15} />
+              </Link>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );
