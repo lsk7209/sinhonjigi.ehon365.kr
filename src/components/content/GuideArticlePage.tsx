@@ -35,6 +35,7 @@ export default function GuideArticlePage({ article, section }: Props) {
     ? article.accent_colors
     : ["#C9A961", "#0F1E3D"];
   const articleUrl = `/${section}/guide/${article.slug}`;
+  const sectionLabel = sectionLabels[section];
   const articleStyle = {
     "--article-accent": accent,
     "--article-accent-soft": accentSoft,
@@ -132,6 +133,35 @@ export default function GuideArticlePage({ article, section }: Props) {
         <GuideMarkdown body={draft.body} />
       </section>
 
+      <aside className="mt-6 rounded-2xl border border-[var(--article-accent)] bg-white p-5 shadow-[var(--shadow-sm)]">
+        <h2 className="text-base font-extrabold text-[var(--text-strong)]">
+          {article.main_keyword} 다음 확인 경로
+        </h2>
+        <p className="mt-2 text-sm leading-6 text-[var(--text-secondary)]">
+          조건을 확인했다면 같은 주제의 최신 글과 지역별 정보를 함께 비교해 보세요.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          <Link
+            href={`/${section}/guide`}
+            className="rounded-lg bg-[var(--article-accent)] px-3 py-2 text-sm font-bold text-white"
+          >
+            {sectionLabel} 더 보기
+          </Link>
+          <Link
+            href={`/${section}`}
+            className="rounded-lg border border-[var(--border-emphasis)] px-3 py-2 text-sm font-bold text-[var(--text-strong)]"
+          >
+            지역별 정보 비교
+          </Link>
+          <Link
+            href="/blog"
+            className="rounded-lg border border-[var(--border-emphasis)] px-3 py-2 text-sm font-bold text-[var(--text-strong)]"
+          >
+            최신 블로그 글
+          </Link>
+        </div>
+      </aside>
+
       {officialSources.length > 0 ? (
         <aside className="mt-6 rounded-2xl border border-[var(--border-emphasis)] bg-[var(--bg-soft)] p-5">
           <h2 className="text-base font-extrabold text-[var(--text-strong)]">
@@ -164,6 +194,12 @@ export default function GuideArticlePage({ article, section }: Props) {
     </article>
   );
 }
+
+const sectionLabels: Record<GuideSection, string> = {
+  jiwon: "지원금 가이드",
+  wedding: "결혼식 가이드",
+  sinhon: "신혼 생활 가이드",
+};
 
 function formatDateTime(value: string) {
   return new Intl.DateTimeFormat("ko-KR", {

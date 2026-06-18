@@ -154,6 +154,51 @@ export default function BlogPage() {
         ))}
       </section>
 
+      <section
+        style={{
+          marginTop: 28,
+          border: "1px solid var(--border)",
+          borderRadius: 18,
+          background: "var(--bg-card)",
+          padding: 22,
+          boxShadow: "var(--shadow-sm)",
+        }}
+      >
+        <h2
+          style={{
+            color: "var(--text-strong)",
+            fontSize: 22,
+            fontWeight: 850,
+            lineHeight: 1.3,
+          }}
+        >
+          신혼 준비 글을 읽기 전 확인할 기준
+        </h2>
+        <p
+          style={{
+            marginTop: 10,
+            color: "var(--text-secondary)",
+            fontSize: 14.5,
+            lineHeight: 1.75,
+          }}
+        >
+          신혼 지원금, 주거 대출, 혼인 신고, 예식장 정보는 지역과 신청 시점에 따라 조건이 달라질 수 있습니다.
+          신혼지기는 공개 자료를 바탕으로 절차와 체크리스트를 정리하지만, 실제 신청 전에는 정부24, 복지로,
+          주택도시기금, 관할 지자체 공고를 함께 확인해야 합니다.
+        </p>
+        <div style={{ marginTop: 16, display: "flex", flexWrap: "wrap", gap: 10 }}>
+          <a href="https://www.gov.kr" target="_blank" rel="noopener noreferrer" style={{ color: "var(--lav-600)", fontWeight: 800 }}>
+            정부24
+          </a>
+          <a href="https://www.bokjiro.go.kr" target="_blank" rel="noopener noreferrer" style={{ color: "var(--lav-600)", fontWeight: 800 }}>
+            복지로
+          </a>
+          <a href="https://nhuf.molit.go.kr" target="_blank" rel="noopener noreferrer" style={{ color: "var(--lav-600)", fontWeight: 800 }}>
+            주택도시기금
+          </a>
+        </div>
+      </section>
+
       <section style={{ marginTop: 32 }}>
         <div
           style={{

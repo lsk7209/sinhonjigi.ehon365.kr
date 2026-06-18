@@ -135,6 +135,12 @@ export function isGuidePublic(article: GuideArticle, now = new Date()) {
   return new Date(article.scheduled_at).getTime() <= now.getTime();
 }
 
+export function getGuideMetaTitle(article: GuideArticle) {
+  const keyword = article.main_keyword.trim();
+  if (!keyword || article.title.startsWith(keyword)) return article.title;
+  return `${keyword}: ${article.title}`;
+}
+
 function stripFrontmatter(raw: string) {
   if (!raw.startsWith("---")) return raw;
   const parts = raw.split("---");

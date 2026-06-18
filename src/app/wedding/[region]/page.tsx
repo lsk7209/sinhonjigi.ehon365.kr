@@ -14,11 +14,31 @@ import SourceAttribution from "@/components/content/SourceAttribution";
 import AdDisclosure from "@/components/content/AdDisclosure";
 import type { FaqItem, MarriageStat, Region, WeddingHall } from "@/types";
 import regionsData from "@/data/seed/regions.json";
+import curatedWeddingHalls from "@/data/seed/wedding-halls.curated.json";
 
 export const revalidate = 86400;
 
 interface Props {
   params: Promise<{ region: string }>;
+}
+
+type CuratedWeddingHall = Omit<WeddingHall, "permit_date"> & {
+  permit_date: string | null;
+  source_name?: string;
+  source_url?: string;
+};
+
+function getCuratedWeddingHalls(regionId: string): WeddingHall[] {
+  return (curatedWeddingHalls as CuratedWeddingHall[])
+    .filter((hall) => hall.region_id === regionId)
+    .map((hall) => ({
+      id: hall.id,
+      region_id: hall.region_id,
+      name: hall.name,
+      address: hall.address,
+      status: hall.status,
+      permit_date: hall.permit_date ? new Date(hall.permit_date) : null,
+    }));
 }
 
 export async function generateStaticParams() {
@@ -41,10 +61,11 @@ async function getPageData(regionId: string) {
   const db = getDb();
   const seedRegion = regionsData.find((region) => region.id === regionId);
   if (!seedRegion) return null;
+  const curatedHalls = getCuratedWeddingHalls(regionId);
 
   const fallback = {
     region: { ...seedRegion, created_at: null } as Region,
-    halls: [] as WeddingHall[],
+    halls: curatedHalls,
     marriageStats: null as MarriageStat | null,
     offers: [],
   };
@@ -76,7 +97,7 @@ async function getPageData(regionId: string) {
 
     return {
       region: regionRow as Region,
-      halls: hallRows as WeddingHall[],
+      halls: hallRows.length > 0 ? (hallRows as WeddingHall[]) : curatedHalls,
       marriageStats: (statsRows[0] as MarriageStat) ?? null,
       offers,
     };
@@ -143,7 +164,7 @@ export default async function WeddingRegionPage({ params }: Props) {
     {
       label: "확인된 예식장",
       value: `${halls.length}곳`,
-      note: halls.length > 0 ? "LOCALDATA 기준" : "DB 연결 후 자동 표시",
+      note: halls.length > 0 ? "공공데이터포털 기준" : "DB 연결 후 자동 표시",
     },
     {
       label: "영업 추정",
@@ -167,7 +188,11 @@ export default async function WeddingRegionPage({ params }: Props) {
   ];
 
   const sources = [
-    { name: "LOCALDATA", url: "https://www.localdata.go.kr" },
+    { name: "공공데이터포털", url: "https://www.data.go.kr" },
+    {
+      name: "공식 사이트·검색 검수 seed",
+      url: "https://www.google.com/search?q=%EC%98%88%EC%8B%9D%EC%9E%A5",
+    },
     { name: "KOSIS", url: "https://kosis.kr" },
   ];
 
@@ -252,7 +277,7 @@ export default async function WeddingRegionPage({ params }: Props) {
             예식장 데이터 연결 대기 중입니다
           </h2>
           <p className="mt-2 text-sm leading-6 text-[var(--text-secondary)]">
-            LOCALDATA 적재가 끝나면 지역별 예식장 목록과 영업 상태가 자동으로
+            공공데이터포털 적재가 끝나면 지역별 예식장 목록과 영업 상태가 자동으로
             표시됩니다.
           </p>
         </section>

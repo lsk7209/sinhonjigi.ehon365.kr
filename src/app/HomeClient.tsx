@@ -245,6 +245,17 @@ export default function HomeClient() {
                   <Icon name="shield" size={14} /> 출처 5개+ 명시
                 </span>
               </div>
+              <div className="sj-hero-meta" style={{ marginTop: 12 }}>
+                <a href="https://www.gov.kr" target="_blank" rel="noopener noreferrer">
+                  정부24
+                </a>
+                <a href="https://www.bokjiro.go.kr" target="_blank" rel="noopener noreferrer">
+                  복지로
+                </a>
+                <a href="https://nhuf.molit.go.kr" target="_blank" rel="noopener noreferrer">
+                  주택도시기금
+                </a>
+              </div>
             </div>
 
             <aside className="sj-snapshot" aria-label="데이터 스냅샷">

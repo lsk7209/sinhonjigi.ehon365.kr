@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import GuideArticlePage from "@/components/content/GuideArticlePage";
-import { getGuideBySlug, getGuideStaticParams } from "@/lib/guides";
+import { getGuideBySlug, getGuideMetaTitle, getGuideStaticParams } from "@/lib/guides";
 
 export const dynamic = "force-dynamic";
 
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!article) return {};
 
   return {
-    title: article.title,
+    title: getGuideMetaTitle(article),
     description: article.subtitle,
     alternates: { canonical: `/wedding/guide/${article.slug}` },
   };
