@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 import HomeClient from "./HomeClient";
 
 export const metadata: Metadata = {
@@ -8,6 +9,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-export default function HomePage() {
+export default async function HomePage({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const params = await searchParams;
+  if (params.s) {
+    redirect("/blog");
+  }
   return <HomeClient />;
 }
