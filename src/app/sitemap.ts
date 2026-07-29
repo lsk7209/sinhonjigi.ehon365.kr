@@ -31,16 +31,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const guideRoutes = getAllGuides()
     .filter((guide) => isGuidePublic(guide, now))
-    .map((guide) => `/${guide.type}/guide/${guide.slug}`);
+    .map((guide) => ({
+      url: `/${guide.type}/guide/${guide.slug}`,
+      lastModified: new Date(guide.scheduled_at),
+    }));
 
-  const urls = [...staticRoutes, ...regionRoutes, ...guideRoutes];
-
-  return urls.map((url) => ({
+  const stableRoutes = [...staticRoutes, ...regionRoutes].map((url) => ({
     url: absoluteUrl(url),
-    lastModified: now,
     changeFrequency: getChangeFrequency(url),
     priority: getPriority(url),
   }));
+
+  return [
+    ...stableRoutes,
+    ...guideRoutes.map(({ url, lastModified }) => ({
+      url: absoluteUrl(url),
+      lastModified,
+      changeFrequency: getChangeFrequency(url),
+      priority: getPriority(url),
+    })),
+  ];
 }
 
 function getChangeFrequency(url: string): MetadataRoute.Sitemap[number]["changeFrequency"] {

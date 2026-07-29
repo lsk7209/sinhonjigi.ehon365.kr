@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import AdSenseLoader from "@/components/ads/AdSenseLoader";
 import { siteUrl } from "@/lib/site";
 
 const inter = Inter({
@@ -13,8 +14,6 @@ const inter = Inter({
 });
 
 const googleAnalyticsId = "G-H62XHNDF13";
-const adsensePublisherId = "ca-pub-3050601904412736";
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -51,13 +50,7 @@ export default function RootLayout({
           name="naver-site-verification"
           content="ebb63fffe6fffb291fc58cd2e6f0b094d21a07ce"
         />
-        <Script
-          id="google-adsense"
-          async
-          crossOrigin="anonymous"
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsensePublisherId}`}
-          strategy="afterInteractive"
-        />
+        <AdSenseLoader />
         <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}

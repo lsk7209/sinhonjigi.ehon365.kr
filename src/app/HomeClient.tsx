@@ -125,7 +125,7 @@ function Icon({ name, size = 18 }: { name: IconName; size?: number }) {
 
 const subsidies = [
   {
-    href: "/jiwon/guide/신혼부부-전세자금-대출",
+    href: "/jiwon/guide/신혼부부-전세자금-대출-전세자금-조건과-신청-전-확인할-기준",
     category: "주거",
     icon: "key-round" as const,
     status: "마감 임박",
@@ -137,7 +137,7 @@ const subsidies = [
     source: "서울주거포털",
   },
   {
-    href: "/jiwon/guide/결혼-지원금-조건",
+    href: "/jiwon/guide/지자체-결혼-축하금-혼인신고-조건과-신청-전-확인할-기준",
     category: "현금지원",
     icon: "banknote" as const,
     status: "상시",
@@ -149,7 +149,7 @@ const subsidies = [
     source: "보조금24",
   },
   {
-    href: "/sinhon/guide/신혼희망타운-청약",
+    href: "/jiwon/guide/신혼희망타운-청약-청약통장-조건과-신청-전-확인할-기준",
     category: "대출",
     icon: "building" as const,
     status: "최근 업데이트",
@@ -180,9 +180,9 @@ const updates = [
 ];
 
 const guideLinks = [
-  { href: "/jiwon/guide/전세자금-대출-비교", title: "신혼부부 전세자금 대출 3종 비교", meta: "지원금 · 7분" },
-  { href: "/wedding/guide/박람회-활용법", title: "웨딩박람회 100% 활용하는 법", meta: "결혼식 · 5분" },
-  { href: "/sinhon/guide/신혼희망타운-청약", title: "신혼희망타운 청약 조건과 신청 가이드", meta: "신혼 생활 · 6분" },
+  { href: "/jiwon/guide/신혼부부-전세자금-대출-대출한도-비교-기준과-체크리스트", title: "신혼부부 전세자금 대출 3종 비교", meta: "지원금 · 7분" },
+  { href: "/wedding/guide/웨딩박람회-상담-상담동선-실수-줄이는-준비-순서", title: "웨딩박람회 100% 활용하는 법", meta: "결혼식 · 5분" },
+  { href: "/jiwon/guide/신혼희망타운-청약-청약통장-조건과-신청-전-확인할-기준", title: "신혼희망타운 청약 조건과 신청 가이드", meta: "신혼 생활 · 6분" },
 ];
 
 function RegionSearch() {
@@ -281,7 +281,7 @@ export default function HomeClient() {
                   <span>갱신 주기</span>
                 </div>
               </div>
-              <Link className="sj-snapshot-link" href="/jiwon/guide/전세자금-대출-비교">
+              <Link className="sj-snapshot-link" href="/jiwon/guide/신혼부부-전세자금-대출-전세자금-조건과-신청-전-확인할-기준">
                 <span>
                   <Icon name="file-text" size={16} />
                   2026 신혼부부 지원금 총정리 읽기
