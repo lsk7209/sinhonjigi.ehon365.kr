@@ -7,7 +7,7 @@ const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "신혼지기",
-  url: "https://sinhonjigi.com",
+  url: "https://sinhonjigi.ehon365.kr",
   description: "공공데이터 기반 결혼·신혼 종합 정보 허브",
 };
 
